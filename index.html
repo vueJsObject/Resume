@@ -23,26 +23,7 @@
 	<!--<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 	<!--<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
 	<!--//web-fonts-->
-	<!--js-->
-	<!--<script>-->
-	<!--addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);-->
-	<!--function hideURLbar(){ window.scrollTo(0,1); 	}-->
 
-	<!--</script>-->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<!-- //js -->
-	<!--start-smooth-scrolling-->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		})
-	</script>
-	<!--//end-smooth-scrolling-->
 </head>
 <body>
 	<!--banner-->
@@ -801,7 +782,26 @@
 
 
 
+	<!--js-->
+	<!--<script>-->
+	<!--addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);-->
+	<!--function hideURLbar(){ window.scrollTo(0,1); 	}-->
 
+	<!--</script>-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!--start-smooth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		})
+	</script>
+	<!--//end-smooth-scrolling-->
 	<!--smooth-scrolling-of-move-up-->
 	<script type="text/javascript">
 		$(document).ready(function() {
