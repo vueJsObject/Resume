@@ -30,10 +30,10 @@
     <div id="home" class="banner">
         <div class="banner-info">
             <div class="container">
-                <div class="col-md-4 header-left">
-                    <img src="images/me.jpg" alt="" class="cursor pe_img">
+                <div class="col-md-3 header-left">
+<!--                    <img src="images/me.jpg" alt="" class="cursor pe_img">-->
                 </div>
-                <div class="col-md-8 header-right">
+                <div class="col-md-9 header-right">
                     <h2>Hello World</h2>
                     <h1>涎涎</h1>
                     <h6>全栈工程师</h6>
@@ -129,7 +129,7 @@
                     <ul class="nav navbar">
                         <li><a href="#about" class="scroll">关于我</a></li>
                         <li><a href="#work" class="scroll">个人经历</a></li>
-                        <li><a href="#education" class="scroll">兴趣爱好</a></li>
+<!--                        <li><a href="#education" class="scroll">兴趣爱好</a></li>-->
                         <li><a href="#skills" class="scroll">专业技能</a></li>
                         <li><a href="#projects" class="scroll">部分作品</a></li>
                         <!--<li><a href="#contact" class="scroll">联系我</a></li>-->
@@ -307,67 +307,27 @@
     <div id="skills" class="skills">
         <div class="container">
             <h3 class="title">
-                <span>专业技能</span>
+                <span>核心技能</span>
                 <small style="font-size: 35%;">了解 < 熟悉 < 熟练 < 精通 </small>
             </h3>
             <div class="skills-info">
-                <div class="col-md-6 bar-grids">
-                    <h6>Linux <span> 了解 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 25%">
-                        </div>
-                    </div>
-                    <h6>SpringCloud <span> 了解 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 25%">
-                        </div>
-                    </div>
-                    <h6>Springboot<span> 了解 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 25%">
-                        </div>
-                    </div>
-                    <h6>Redis / MongoDB<span> 了解 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 25%">
-                        </div>
-                    </div>
-                    <h6>Spring / SpringMVC / Mybatis<span> 熟悉 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 50%">
-                        </div>
-                    </div>
-
+                <div class="col-md-6 bar-grids skillsCore_left">
                 </div>
-                <div class="col-md-6 bar-grids">
-                    <h6>ORACLE / MySql <span> 熟悉 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 50%">
-                        </div>
-                    </div>
-                    <h6>HTML/CSS/JAVASCRIPT <span> 熟练 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 75%">
-                        </div>
-                    </div>
-                    <h6>Jquery<span> 熟练 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 75%">
-                        </div>
-                    </div>
-                    <h6>Java基础/高级<span> 熟练 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 75%">
-                        </div>
-                    </div>
-                    <h6>SVN / Git<span> 熟练 </span></h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" style="width: 75%">
-                        </div>
-                    </div>
-
+                <div class="col-md-6 bar-grids skillsCore_right">
                 </div>
                 <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="title">
+                <span>其它技能</span>
+                <small style="font-size: 35%;">了解 < 熟悉 < 熟练 < 精通 </small>
+            </h3>
+            <div class="skills-info">
+                <div class="col-md-6 bar-grids skillsOther_left">
+                </div>
+                <div class="col-md-6 bar-grids skillsOther_right">
+                </div>
             </div>
         </div>
     </div>
@@ -517,8 +477,8 @@
                                             title="实现12306的一小部分功能">
                                             <img src="images/Java1.png" alt="" class="img-responsive" />
                                             <div class="figcaption">
-                                                <h3>My<span> 12306</span></h3>
-                                                <p>实现12306的一小部分功能</p>
+                                                <h3>购<span> 票网</span></h3>
+                                                <p>实现JavaWeb的基本功能</p>
                                             </div>
                                         </a>
                                     </div>
@@ -567,42 +527,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/easyResponsiveTabs.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
-    <script>
-        $(function () {
-
-            /**
-             * ResponsiveTabs
-             */
-            $('#horizontalTab').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true   // 100% fit in a container
-            });
-            /**
-             * swipe box js
-             */
-            $(".swipebox").swipebox();
-
-            /**
-             * smooth-scrolling-of-move-up
-             * @type {
-             * {
-             * easingType: string,
-             * containerHoverID: string,
-             * scrollSpeed: number,
-             * containerID: string
-             * }
-             * }
-             */
-            var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-            };
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        })
-    </script>
+    <script src="js/call.js"></script>
+    <script src="js/skillCall.js"></script>
 </body>
-
 </html>
