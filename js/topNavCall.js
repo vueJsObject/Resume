@@ -1,0 +1,539 @@
+$(function () {
+    //根据配置生成对应的内容容器
+    let topNavConfig = {
+        navbarConfig: [
+            // {
+            //     id: "about",
+            //     content: "关于我"
+            // },
+            // {
+            //     id: "work",
+            //     content: "个人经历"
+            // },
+            // {
+            //     id: "education",
+            //     content: "兴趣爱好"
+            // },
+            {
+                id: "skills",
+                content: "核心技能"
+            },
+            {
+                id: "otherskills",
+                content: "其它技能"
+            },
+            {
+                id: "projects",
+                content: "部分作品"
+            },
+
+            // {
+            //     id: "contact",
+            //     content: "联系我"
+            // },
+        ],
+        generateNavbarContent: function () {
+            let html = '',
+                navArray = this.navbarConfig;
+            for (let i = 0; i < navArray.length; i++) {
+                html += '<li><a href="#' + navArray[i].id + '" class="scroll">' + navArray[i].content + '</a></li>';
+            }
+            return html;
+        },
+        generateNavbarAfterBox: function () {
+            let html = '',
+                navArray = this.navbarConfig;
+            for (let i = 0; i < navArray.length; i++) {
+                if (navArray[i].id == "skills") {
+                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '">\n' +
+                        '        <div class="container">\n' +
+                        '           <h3 class="title">\n' +
+                        '               <span>' + navArray[i].content + '</span>\n' +
+                        '               <small style="font-size: 35%;">了解 < 熟悉 < 熟练 < 精通 </small>\n' +
+                        '</h3>\n' +
+                        '        </div>\n' +
+                        '    </div>\n';
+                } else if (navArray[i].id == "projects") {
+                    html += '<div id="' + navArray[i].id + '" class="portfolio">\n' +
+                        '        <div class="container">\n' +
+                        '           <h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">' + navArray[i].content + '</h3>\n' +
+                        '           <div class="sap_tabs">\n' +
+                        '               <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">\n' +
+                        // '                   <ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">\n' +
+                        // '                   </ul>\n' +
+                        // '                   <div class="clearfix"> </div>\n' +
+                        // '                   <div class="resp-tabs-container">\n' +
+                        // '                   </div>\n' +
+                        '               </div>\n' +
+                        '           </div>\n' +
+                        '        </div>\n' +
+                        '    </div>\n';
+                } else {
+                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '">\n' +
+                        '        <div class="container">\n' +
+                        '           <h3 class="title">' + navArray[i].content + '</h3>\n' +
+                        '        </div>\n' +
+                        '    </div>\n';
+                }
+            }
+            return html;
+        },
+        generateAbouthtml: function () {
+            return '            <div class="col-md-8 about-left ">\n' +
+                '                <p>\n' +
+                '                    本人勤奋踏实，工作认真负责，自学能力强;性格开朗，容易与人相处，注重团队协作精神，且能承受较大压力。\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    1. 本科学历，计算机信息管理专业\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    2. 三年全栈开发经验，前端熟悉使用bootstrap框加，d3，echarts，jquery,css3动画,h5等,\n' +
+                '                    并有基于jquery的二次框开发插件经验,基于d3独立封装图形框架经验等,\n' +
+                '                    Java熟悉使用spring boot,springMvc,Mybaits等主流Java开发框架;\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    3. 能熟练使用git，maven等工具;\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    4. 熟悉mysql/oracle等数据库;\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    5. 有良好的沟通能力，学习能力，适应能力，责任心。\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    6. 更多详情，请访问我的个人主页面 https://yanbo0039.gitee.io/ 页面有我部分的项目作品介绍\n' +
+                '                </p>\n' +
+                '                <p>\n' +
+                '                    7. 若想了解更全面的作品，请访问我的github主页面 https://github.com/yanbo0039\n' +
+                '                </p>\n' +
+                '            </div>\n' +
+                '            <div class="col-md-4 about-right">\n' +
+                '                <ul>\n' +
+                '                    <h5>荣誉证书</h5>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 绵阳师范专科学历</li>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 北京师范本科学历</li>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 工信部认证中级网络工程师</li>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 连续编程十小时不累奖 </li>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 与人相处愉快，不坑队友。。。</li>\n' +
+                '                </ul>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="clearfix"> </div>';
+        },
+        generateWork: function () {
+            return '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-left">\n' +
+                '                    <h4>2016 - 2019 </h4>\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-right">\n' +
+                '                    <h5><span class="glyphicon glyphicon-briefcase"> </span> 北京**科技有限公司</h5>\n' +
+                '                    <p>\n' +
+                '                        2016年4月，独自踏上了北漂的路程，机缘巧合下加入了北京**科技有限公司，公司业务主要是网络、\n' +
+                '                        运维、安全、流量，我在研发部门主要负责产品的前后端研发,因为是创业公司，所以加班是我们的日常，\n' +
+                '                        下图就是我们研发小组大概凌晨一点的一次加餐，虽然很辛苦，但此刻大家都笑得那么开心，而我在大家都\n' +
+                '                        面对镜头的那一瞬间却还沉浸在快餐盒里的美味无法自拔。。。。，详情请面聊。。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/xieruan.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-right work-right2">\n' +
+                '                    <h4>2013 - 2015 </h4>\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-left work-left2">\n' +
+                '                    <h5> 广州**智能科技有限公司 <span class="glyphicon glyphicon-briefcase"> </span></h5>\n' +
+                '                    <p> 2013年01月进入广州**智能科技有限公司，主要负责项目实施。\n' +
+                '                        帮助公司将公司项目布置运行在客户现场以及负责项目的bug解决和\n' +
+                '                        客户培训及客户对公司项目的反馈意见等，下图为公司年会时来自全国\n' +
+                '                        驻各个城市点的同事一起玩游戏时所拍的照片，虽然我的工作大多数时候是孤单的一个人在省内\n' +
+                '                        各个城市到处跑，但因为有这个活动的存在，更能感觉到自己并不是一个人在战斗。。。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/liqi.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-left">\n' +
+                '                    <h4>2012 - 2013 </h4>\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-right">\n' +
+                '                    <h5><span class="glyphicon glyphicon-briefcase"> </span>成都***教育</h5>\n' +
+                '                    <p>\n' +
+                '                        2012年至2013期间在成都***教育参加了为期六个月的软件编程培训，\n' +
+                '                        就读于百杰十六班，这段时间虽然短暂，但对我的人生影响是巨大的，\n' +
+                '                        我终生以有此经历而荣。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/bjtx.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-right work-right2">\n' +
+                '                    <h4>2009 - 2012 </h4>\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-left work-left2">\n' +
+                '                    <h5> 大学毕业 <span class="glyphicon glyphicon-briefcase"></span> </h5>\n' +
+                '                    <p>2012年正式毕业离校，母校校训：厚德 博学 笃行 弘毅 八字真言已深深的烙在我的内心。 </p>\n' +
+                '                    <img src="images/graduation.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>';
+        },
+        generateEducation: function () {
+            return '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-left">\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-right">\n' +
+                '                    <h5><span class="glyphicon glyphicon-education"> </span> 健身</h5>\n' +
+                '                    <p>\n' +
+                '                        若有空闲时间，我会拿出一部分时间，请专业的私教来给我上课，达到针对性的锻炼的目的，\n' +
+                '                        与这些个肌肉男在一起，总免不了一顿被虐。。。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/js.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-right work-right2">\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-left work-left2">\n' +
+                '                    <h5> 跑步 <span class="glyphicon glyphicon-education"></span></h5>\n' +
+                '                    <p>\n' +
+                '                        曾先后三次参加城市马拉松，并且安全完赛，\n' +
+                '                        现在跑步已经成为我生活中的一部分了，若能腾出时间自己每年都会去跑那么一次，\n' +
+                '                        最好成绩曾一度接近国家六级运动员水平。。。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/mls.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>\n' +
+                '            <div class="work-info">\n' +
+                '                <div class="col-md-6 work-left">\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 work-right">\n' +
+                '                    <h5><span class="glyphicon glyphicon-education"> </span> 跳舞</h5>\n' +
+                '                    <p>\n' +
+                '                        自己比较喜欢曳步舞，最喜欢的老师是强晶，也有自己的非盈利组织的舞团，\n' +
+                '                        偶尔自己还时不时去那么一次。。。。\n' +
+                '                    </p>\n' +
+                '                    <img src="images/ybw.jpg" alt="" class="img-responsive mt_5 cursor pe_img">\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"> </div>\n' +
+                '            </div>';
+        },
+        generateContacthtml: function () {
+            return '            <div class="contact-row">\n' +
+                '                <div class="col-md-6 contact-left">\n' +
+                '                    <iframe\n' +
+                '                            src="http://map.baidu.com/#panoid=09002200011706171137054909Z&panotype=street&heading=0&pitch=0&l=19&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=09002200011706171137054909Z"></iframe>\n' +
+                '                </div>\n' +
+                '                <div class="col-md-6 contact-right">\n' +
+                '                    <div class="address-left">\n' +
+                '                        <p>北京朝阳区赵九路风景线,中国 </p>\n' +
+                '                    </div>\n' +
+                '                    <div class="address-right">\n' +
+                '                        <p>电话 : 1500008888</p>\n' +
+                '                        <p>E-mail : <a\n' +
+                '                                href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=OwoLDg0MAwgIDgJ7SkoVWFRW"\n' +
+                '                                target="_blank">fm185@sina.com</a></p>\n' +
+                '                    </div>\n' +
+                '                    <div class="clearfix"></div>\n' +
+                '                    <div class="contact-form">\n' +
+                '                        <form action="#" method="post">\n' +
+                '                            <input type="text" name="Name" placeholder="Name" required="">\n' +
+                '                            <input class="email" name="Email" type="text" placeholder="Email" required="">\n' +
+                '                            <input class="phone" name="phone" type="text" placeholder="Phone" required="">\n' +
+                '                            <textarea name="Message" placeholder="Message" required=""></textarea>\n' +
+                '                            <input type="submit" value="提交">\n' +
+                '                        </form>\n' +
+                '                    </div>\n' +
+                '                </div>\n' +
+                '                <div class="clearfix"></div>\n' +
+                '            </div>';
+        }
+    };
+
+    $(".navbarContent").html(topNavConfig.generateNavbarContent());
+    $(".top-nav").after(topNavConfig.generateNavbarAfterBox());
+
+
+    // $("#about > .container > .title").after(topNavConfig.generateAbouthtml());
+    // $("#work > .container > .title").after(topNavConfig.generateWork());
+    // $("#education > .container > .title").after(topNavConfig.generateEducation());
+    // $("#contact > .container > .title").after(topNavConfig.generateContacthtml());
+
+
+
+    //为其它技能赋值 level 值请传入 0/1/2/3 四种值
+
+    let skillObj = {
+        skillsCore_left_html: '<div class="col-md-6 bar-grids">',
+        skillsCore_right_html: '<div class="col-md-6 bar-grids">',
+        skillsOther_left_html: '<div class="col-md-6 bar-grids">',
+        skillsOther_right_html: '<div class="col-md-6 bar-grids">',
+        levelTextArray: ["了解","熟悉","熟练","精通"],
+        levelPointArray: ["25%","50%","75%","100%"],
+        skillsCore_left: [
+            {
+                name: "Html / Css / JavaScript",
+                level: 2
+            },
+            {
+                name: "Java基础/高级",
+                level: 2
+            },
+            {
+                name: "Oracle / MySql",
+                level: 1
+            },
+        ],
+        skillsCore_right: [
+            {
+                name: "Bootstrap / Vue",
+                level: 2
+            },
+            {
+                name: "Svn / Git",
+                level: 2
+            },
+            {
+                name: "SpringBoot / SpringCloud",
+                level: 1
+            },
+        ],
+        skillOther_left: [
+            {
+                name:"ES6+",
+                level:1
+            },
+            {
+                name:"Spring / SpringMVC / Mybatis",
+                level:1
+            },
+            {
+                name:"Linux",
+                level:0
+            },
+            {
+                name:"Redis / MongoDB",
+                level:0
+            },
+        ],
+        skillOther_right: [
+            {
+                name: "Java8 +",
+                level: 1
+            }
+        ],
+        generateProgressHtml: (nameText, levelText, levelPoint) => {
+            return '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n' +
+                '<div class="progress">\n' +
+                '    <div class="progress-bar progress-bar-striped active" style="width: ' + levelPoint + '">\n' +
+                '    </div>\n' +
+                '</div>\n';
+        },
+        generateCoreSkillshtml: () => {
+            if(skillObj.skillsCore_left.length > 0){
+                for (let i = 0; i < skillObj.skillsCore_left.length; i++) {
+                    let nameText = skillObj.skillsCore_left[i].name;
+                    let levelText = skillObj.levelTextArray[skillObj.skillsCore_left[i].level];
+                    let levelPoint = skillObj.levelPointArray[skillObj.skillsCore_left[i].level];
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+
+                    skillObj.skillsCore_left_html += progressHtml;
+                }
+            }
+            if(skillObj.skillsCore_right.length > 0){
+                for (let i = 0; i < skillObj.skillsCore_right.length; i++) {
+                    let nameText = skillObj.skillsCore_right[i].name;
+                    let levelText = skillObj.levelTextArray[skillObj.skillsCore_right[i].level];
+                    let levelPoint = skillObj.levelPointArray[skillObj.skillsCore_right[i].level];
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+
+                    skillObj.skillsCore_right_html += progressHtml;
+                }
+            }
+            return '<div class="skills-info">'
+                + skillObj.skillsCore_left_html + '</div>\n'
+                + skillObj.skillsCore_right_html + '</div>\n'
+                + '</div>\n'
+        },
+        generateOtherSkillshtml: () => {
+            if(skillObj.skillOther_left.length > 0){
+                for (let i = 0; i < skillObj.skillOther_left.length; i++) {
+                    let nameText = skillObj.skillOther_left[i].name;
+                    let levelText = skillObj.levelTextArray[skillObj.skillOther_left[i].level];
+                    let levelPoint = skillObj.levelPointArray[skillObj.skillOther_left[i].level];
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+
+                    skillObj.skillsOther_left_html += progressHtml;
+                }
+            }
+            if(skillObj.skillOther_right.length > 0){
+                for (let i = 0; i < skillObj.skillOther_right.length; i++) {
+                    let nameText = skillObj.skillOther_right[i].name;
+                    let levelText = skillObj.levelTextArray[skillObj.skillOther_right[i].level];
+                    let levelPoint = skillObj.levelPointArray[skillObj.skillOther_right[i].level];
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+
+                    skillObj.skillsOther_right_html += progressHtml;
+                }
+            }
+            return '<div class="skills-info">'
+                + skillObj.skillsOther_left_html + '</div>\n'
+                + skillObj.skillsOther_right_html + '</div>\n'
+                + '</div>\n'
+        }
+    };
+    //为核心技能赋值
+    $("#skills > .container > .title").after(skillObj.generateCoreSkillshtml());
+    // 为其它技能赋值
+    $("#otherskills > .container > .title").after(skillObj.generateOtherSkillshtml());
+
+    let projectConfig = {
+        tabItemArray: {
+            CSS:[
+                {
+                    url: "https://gitee.com/css3project/flexIndex",
+                    title: "flexIndex是利用CSS的flex技术做的一个index demo",
+                    img: "images/css1.png",
+                    h3: "flexIndex",
+                    p: "利用CSS的flex技术做的一个index demo"
+                },
+                {
+                    url: "https://gitee.com/css3project/3dRotating_album",
+                    title: "利用CSS3新特性实现css3d旋转相册小demo",
+                    img: "images/css2.png",
+                    h3: "3dRotating_album",
+                    p: "利用CSS3新特性实现css3d旋转相册小demo"
+                },
+                {
+                    url: "https://gitee.com/css3project/cssPageSmoothing",
+                    title: "利用CSS3新特性实现点击页面平滑的效果",
+                    img: "images/css3.png",
+                    h3: "cssPageSmoothing",
+                    p: "利用CSS3新特性实现点击页面平滑的效果"
+                },
+            ],
+            JavaScript: [
+                {
+                    url: "https://gitee.com/jsobject/canvas_rain",
+                    title: "利用原生JS以及原生CANVAS实现类似下雨的动画",
+                    img: "images/JS1.png",
+                    h3: "canvas_rain",
+                    p: "利用原生JS以及原生CANVAS实现类似下雨的动画"
+                },
+                {
+                    url: "https://gitee.com/jsobject/chooseName",
+                    title: "利用原生JS以及ES6实现随机点名的功能",
+                    img: "images/JS2.png",
+                    h3: "chooseName",
+                    p: "利用原生JS以及ES6实现随机点名的功能"
+                },
+                {
+                    url: "https://github.com/javascriptObject/weibo",
+                    title: "利用JS以及ES6和H5的新特性实现类似发表微博的功能",
+                    img: "images/JS3.png",
+                    h3: "weibo",
+                    p: "利用JS以及ES6和H5的新特性实现类似发表微博的功能"
+                },
+            ],
+            Jquery: [
+                {
+                    url: "https://gitee.com/JqueryObjects/tanMu",
+                    title: "利用Jquery实现直播视频弹幕demo",
+                    img: "images/Jquery1.png",
+                    h3: "tanMu",
+                    p: "利用Jquery实现直播视频弹幕demo"
+                },
+                {
+                    url: "https://gitee.com/JqueryObjects/chief_Counsel",
+                    title: "利用Jquery以及CSS3实现首席律师小项目",
+                    img: "images/Jquery2.png",
+                    h3: "chief_Counsel",
+                    p: "利用Jquery以及CSS3实现首席律师小项目"
+                },
+                {
+                    url: "https://gitee.com/JqueryObjects/piano_player",
+                    title: "利用Jquery和H5新特性实现弹钢琴的小demo",
+                    img: "images/Jquery3.png",
+                    h3: "piano_player",
+                    p: "利用Jquery和H5新特性实现弹钢琴的小demo"
+                },
+            ],
+            Java: [
+                {
+                    url: "https://gitee.com/JavaObjects/my12306",
+                    title: "实现12306的一小部分功能",
+                    img: "images/Java1.png",
+                    h3: "购票网",
+                    p: "实现JavaWeb的基本功能"
+                },
+                {
+                    url: "https://gitee.com/JavaObjects/ipm_boot",
+                    title: "企业级网络流量监控，数据分析，拓扑梳理",
+                    img: "images/Java2.png",
+                    h3: "全栈性能管理与流量分析平台",
+                    p: "企业项目，企业级网络流量监控，数据分析，拓扑梳理"
+                },
+                {
+                    url: "https://gitee.com/JavaObjects/TSMCP",
+                    title: "企业级网络流量监控，数据分析，拓扑梳理",
+                    img: "images/tsmcp.png",
+                    h3: "腾讯智能制造云平台",
+                    p: "腾讯智能制造云平台"
+                },
+            ]
+        },
+        generateprojecthtml: function (){
+            let itemArray = Object.keys(this.tabItemArray);
+            let itemhtml = '\n<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">\n';
+            let resptabcontenthtml = '<div class="resp-tabs-container">\n';
+
+            for (let i = 0; i < itemArray.length; i++) {
+                itemhtml += '<li class="resp-tab-item"><span>'+ itemArray[i] +'</span></li>\n';
+                resptabcontenthtml += '<div class="tab-1 resp-tab-content" data-mytip="'+ itemArray[i] +'">\n' +
+                    '<div class="tab_img">\n';
+                let valItemArray = this.tabItemArray[itemArray[i]];
+
+                for (let j = 0; j < valItemArray.length; j++) {
+                    let url = valItemArray[j].url,
+                        title = valItemArray[j].title,
+                        img = valItemArray[j].img,
+                        h3 = valItemArray[j].h3,
+                        p = valItemArray[j].p;
+                    resptabcontenthtml +=
+                        '<div class="col-md-4 portfolio-grids">\n' +
+                        '     <div class="grid">\n' +
+                        '         <a href="'+ url +'" target="_blank"\n' +
+                        '             title="'+ title +'">\n' +
+                        '             <img src="'+ img +'" alt="" class="img-responsive" />\n' +
+                        '             <div class="figcaption">\n' +
+                        '                 <h3><span>'+ h3 +'</span></h3>\n' +
+                        '                 <p>'+ p +'</p>\n' +
+                        '             </div>\n' +
+                        '         </a>\n' +
+                        '     </div>\n' +
+                        '</div>\n';
+
+                }
+
+                resptabcontenthtml += '<div class="clearfix"> </div>\n' +
+                    '</div>\n' +
+                    '</div>\n';
+            }
+            itemhtml += '</ul>\n' +
+                '<div class="clearfix"> </div>\n';
+            return itemhtml + resptabcontenthtml +'</div>\n';
+        }
+    };
+    $("#projects #horizontalTab").html(projectConfig.generateprojecthtml());
+
+
+
+
+
+
+
+});
