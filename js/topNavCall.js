@@ -6,14 +6,17 @@ $(function () {
             //     id: "about",
             //     content: "关于我"
             // },
-            // {
-            //     id: "work",
-            //     content: "个人经历"
-            // },
+
             // {
             //     id: "education",
             //     content: "兴趣爱好"
             // },
+
+            // {
+            //     id: "contact",
+            //     content: "联系我"
+            // },
+
             {
                 id: "skills",
                 content: "核心技能"
@@ -26,12 +29,24 @@ $(function () {
                 id: "projects",
                 content: "部分作品"
             },
-
+            {
+                id: "hobby",
+                content: "兴趣爱好"
+            },
             // {
-            //     id: "contact",
-            //     content: "联系我"
+            //     id: "work",
+            //     content: "工作经历"
             // },
         ],
+        getBColor: (i) => {
+            let bgColor = "";
+            if(i % 2 === 0){
+                bgColor = "background:#000;";
+            }else {
+                bgColor = "background: #262424;";
+            }
+            return bgColor
+        },
         generateNavbarContent: function () {
             let html = '',
                 navArray = this.navbarConfig;
@@ -45,7 +60,7 @@ $(function () {
                 navArray = this.navbarConfig;
             for (let i = 0; i < navArray.length; i++) {
                 if (navArray[i].id == "skills") {
-                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '">\n' +
+                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '" style="'+ topNavConfig.getBColor(i) +'">\n' +
                         '        <div class="container">\n' +
                         '           <h3 class="title">\n' +
                         '               <span>' + navArray[i].content + '</span>\n' +
@@ -54,7 +69,7 @@ $(function () {
                         '        </div>\n' +
                         '    </div>\n';
                 } else if (navArray[i].id == "projects") {
-                    html += '<div id="' + navArray[i].id + '" class="portfolio">\n' +
+                    html += '<div id="' + navArray[i].id + '" class="portfolio"  style="'+ topNavConfig.getBColor(i) +'">\n' +
                         '        <div class="container">\n' +
                         '           <h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">' + navArray[i].content + '</h3>\n' +
                         '           <div class="sap_tabs">\n' +
@@ -69,7 +84,7 @@ $(function () {
                         '        </div>\n' +
                         '    </div>\n';
                 } else {
-                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '">\n' +
+                    html += '<div id="' + navArray[i].id + '" class="' + navArray[i].id + '"  style="'+ topNavConfig.getBColor(i) +'">\n' +
                         '        <div class="container">\n' +
                         '           <h3 class="title">' + navArray[i].content + '</h3>\n' +
                         '        </div>\n' +
@@ -114,7 +129,7 @@ $(function () {
                 '                    <li><span class="glyphicon glyphicon-menu-right"></span> 北京师范本科学历</li>\n' +
                 '                    <li><span class="glyphicon glyphicon-menu-right"></span> 工信部认证中级网络工程师</li>\n' +
                 '                    <li><span class="glyphicon glyphicon-menu-right"></span> 连续编程十小时不累奖 </li>\n' +
-                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 与人相处愉快，不坑队友。。。</li>\n' +
+                '                    <li><span class="glyphicon glyphicon-menu-right"></span> 与人相处愉快不坑队友。。。</li>\n' +
                 '                </ul>\n' +
                 '                <div class="clearfix"> </div>\n' +
                 '            </div>\n' +
@@ -253,7 +268,6 @@ $(function () {
                 '            </div>';
         }
     };
-
     $(".navbarContent").html(topNavConfig.generateNavbarContent());
     $(".top-nav").after(topNavConfig.generateNavbarAfterBox());
 
@@ -265,6 +279,197 @@ $(function () {
 
 
 
+
+    let abougConfig = {
+        data: {
+            content:  '',
+            aboutbox: {
+                title: "荣誉证书",
+                item: [
+                    "绵阳师范专科学历",
+                    "北京师范本科学历",
+                    "工信部认证中级网络工程师",
+                    "连续编程十小时不累奖",
+                    "与人相处愉快不坑队友"
+                ]
+            }
+        },
+        generateAboutLeftHtml: () => {
+            return '<div class="col-md-8 about-left ">\n' + abougConfig.data.content + '</div>\n'
+        },
+        generateAboutRightHtml: () => {
+            let html = '<div class="col-md-4 about-right">\n' +
+                '<ul>\n';
+            if(abougConfig.data.aboutbox.item.length){
+                let itemArray = abougConfig.data.aboutbox.item;
+                let title = abougConfig.data.aboutbox.title;
+                html += '<h5>'+ title +'</h5>\n';
+                for (let i = 0; i < itemArray.length; i++) {
+                    html += '<li><span class="glyphicon glyphicon-menu-right"></span>'+ itemArray[i] +'</li>\n';
+                }
+            }
+            html += '</ul>\n' +
+                '<div class="clearfix"> </div>\n' +
+                '</div>\n' +
+                '<div class="clearfix"> </div>';
+            return html;
+        },
+        generateAboutAllHtml: () => {
+            return abougConfig.generateAboutLeftHtml() + abougConfig.generateAboutRightHtml();
+        }
+    }
+    // $("#about > .container > .title").after(abougConfig.generateAboutAllHtml());
+
+    let hobbyConfig = {
+        data: [
+            {
+                title: "五笔",
+                content: "喜欢收集生僻字进行拆解"
+            },
+            {
+                title: "背单词",
+                content: "平时喜欢收集一些计算机专业方面的英文单词"
+            },
+            {
+                title: "做菜",
+                content: "喜欢在周末做一些自己喜欢吃的菜"
+            },
+            {
+                title: "收拾房间",
+                content: "喜欢在周末对自己出租屋进行大扫除"
+            }
+
+        ],
+        leftHtml: (time,title,content,imgSrc) => {
+            return '<div class="work-info">\n' +
+                '    <div class="col-md-6 work-right work-right2">\n' +
+                (time ? '        <h4>'+ time +'</h4>\n' : '') +
+                '    </div>\n' +
+                '    <div class="col-md-6 work-left work-left2 time_border_right">\n' +
+                '        <h5 class="cus_h5">'+ (title ? title : '') +'<span class="glyphicon glyphicon-briefcase"></span></h5>\n' +
+                '        <p>'+ (content ? content : '') +'</p>\n' + (imgSrc ? '<img src="'+ imgSrc +'" alt="" class="img-responsive mt_5 cursor pe_img">\n' : '') +
+                '    </div>\n' +
+                '    <div class="clearfix"> </div>\n' +
+                '</div>'
+        },
+        rightHtml: (time,title,content,imgSrc) => {
+            return '<div class="work-info">\n' +
+                '    <div class="col-md-6 work-left">\n' +
+                (time ? '        <h4>'+ time +'</h4>\n' : '') +
+                '    </div>\n' +
+                '    <div class="col-md-6 work-right time_border_left">\n' +
+                '        <h5 class="cus_h5"><span class="glyphicon glyphicon-briefcase"> </span>'+ (title ? title : '') +'</h5>\n' +
+                '        <p>'+ (content ? content : '') +'</p>\n' + (imgSrc ? '<img src="'+ imgSrc +'" alt="" class="img-responsive mt_5 cursor pe_img">\n' : '') +
+                '    </div>\n' +
+                '    <div class="clearfix"> </div>\n' +
+                '</div>\n'
+        },
+        generateWorkHtml: () => {
+            let html = '';
+            for (let i = 0; i < hobbyConfig.data.length; i++) {
+                let time = hobbyConfig.data[i].time,
+                    title = hobbyConfig.data[i].title,
+                    content = hobbyConfig.data[i].content,
+                    imgSrc = hobbyConfig.data[i].imgSrc;
+                if(i % 2 === 0){
+                    //偶数用左的html
+                    html += hobbyConfig.leftHtml(time,title,content,imgSrc);
+                }else {
+                    //奇数用右的html
+                    html += hobbyConfig.rightHtml(time,title,content,imgSrc);
+                }
+            }
+            return html;
+        }
+    }
+
+    $("#hobby > .container > .title").after(hobbyConfig.generateWorkHtml());
+
+
+
+    let workConfig = {
+        data: [
+            {
+                // time: "2009 - 2012 ",
+                title: "大学毕业 ",
+                content: "2012年正式毕业离校，母校校训：厚德 博学 笃行 弘毅 八字真言已深深的烙在我的内心。 ",
+                // imgSrc: "images/graduation.jpg",
+            },
+            {
+                time: "2012 - 2013 ",
+                title: "成都***教育",
+                content: '\n' +
+    '                        2012年至2013期间在成都***教育参加了为期六个月的软件编程培训，\n' +
+    '                        就读于百杰十六班，这段时间虽然短暂，但对我的人生影响是巨大的，\n' +
+    '                        我终生以有此经历而荣。\n',
+                // imgSrc: "images/bjtx.jpg",
+            },
+            {
+                time: "22013 - 2015",
+                title: "广州**智能科技有限公司",
+                content: '2013年01月进入广州**智能科技有限公司，主要负责项目实施。\n' +
+    '                        帮助公司将公司项目布置运行在客户现场以及负责项目的bug解决和\n' +
+    '                        客户培训及客户对公司项目的反馈意见等，下图为公司年会时来自全国\n' +
+    '                        驻各个城市点的同事一起玩游戏时所拍的照片，虽然我的工作大多数时候是孤单的一个人在省内\n' +
+    '                        各个城市到处跑，但因为有这个活动的存在，更能感觉到自己并不是一个人在战斗。。。\n',
+                // imgSrc: "images/liqi.jpg",
+            },
+            {
+                time: "2016 - 2019 ",
+                title: "北京**科技有限公司",
+                content: '2016年4月，独自踏上了北漂的路程，机缘巧合下加入了北京**科技有限公司，公司业务主要是网络、\n' +
+    '                        运维、安全、流量，我在研发部门主要负责产品的前后端研发,因为是创业公司，所以加班是我们的日常，\n' +
+    '                        下图就是我们研发小组大概凌晨一点的一次加餐，虽然很辛苦，但此刻大家都笑得那么开心，而我在大家都\n' +
+    '                        面对镜头的那一瞬间却还沉浸在快餐盒里的美味无法自拔。。。。，详情请面聊。。\n',
+                // imgSrc: "images/xieruan.jpg",
+            },
+
+        ],
+        leftHtml: (time,title,content,imgSrc) => {
+            return '<div class="work-info">\n' +
+                   '    <div class="col-md-6 work-right work-right2">\n' +
+                (time ? '        <h4>'+ time +'</h4>\n' : '') +
+                   '    </div>\n' +
+                   '    <div class="col-md-6 work-left work-left2 time_border_right">\n' +
+                   '        <h5 class="cus_h5">'+ (title ? title : '') +'<span class="glyphicon glyphicon-briefcase"></span> </h5>\n' +
+                   '        <p>'+ (content ? content : '') +'</p>\n' + (imgSrc ? '<img src="'+ imgSrc +'" alt="" class="img-responsive mt_5 cursor pe_img">\n' : '') +
+                   '    </div>\n' +
+                   '    <div class="clearfix"> </div>\n' +
+                   '</div>'
+        },
+        rightHtml: (time,title,content,imgSrc) => {
+            return '<div class="work-info">\n' +
+                   '    <div class="col-md-6 work-left">\n' +
+                (time ? '        <h4>'+ time +'</h4>\n' : '') +
+                   '    </div>\n' +
+                   '    <div class="col-md-6 work-right time_border_left">\n' +
+                   '        <h5 class="cus_h5"><span class="glyphicon glyphicon-briefcase"> </span>'+ (title ? title : '') +'</h5>\n' +
+                   '        <p>'+ (content ? content : '') +'</p>\n' + (imgSrc ? '<img src="'+ imgSrc +'" alt="" class="img-responsive mt_5 cursor pe_img">\n' : '') +
+                   '    </div>\n' +
+                   '    <div class="clearfix"> </div>\n' +
+                   '</div>\n'
+        },
+        generateWorkHtml: () => {
+            let html = '';
+            for (let i = 0; i < workConfig.data.length; i++) {
+                let time = workConfig.data[i].time,
+                    title = workConfig.data[i].title,
+                    content = workConfig.data[i].content,
+                    imgSrc = workConfig.data[i].imgSrc;
+                if(i % 2 === 0){
+                    //偶数用左的html
+                    html += workConfig.leftHtml(time,title,content,imgSrc);
+                }else {
+                    //奇数用右的html
+                    html += workConfig.rightHtml(time,title,content,imgSrc);
+                }
+            }
+            return html;
+        }
+    };
+
+    // $("#work > .container > .title").after(workConfig.generateWorkHtml());
+
     //为其它技能赋值 level 值请传入 0/1/2/3 四种值
 
     let skillObj = {
@@ -272,16 +477,20 @@ $(function () {
         skillsCore_right_html: '<div class="col-md-6 bar-grids">',
         skillsOther_left_html: '<div class="col-md-6 bar-grids">',
         skillsOther_right_html: '<div class="col-md-6 bar-grids">',
-        levelTextArray: ["了解","熟悉","熟练","精通"],
+        levelTextArray: ["了解(25%)","熟悉(50%)","熟练(75%)","精通"],
         levelPointArray: ["25%","50%","75%","100%"],
         skillsCore_left: [
             {
-                name: "Html / Css / JavaScript",
+                name: "Html / Css / JavaScript / Jquery",
                 level: 2
             },
             {
-                name: "Java基础/高级",
-                level: 2
+                name: "Vue(vue + Router + Vuex + CLI + Devtools)",
+                level: 1
+            },
+            {
+                name: "SpringBoot(SpringFramework+SpringMVC+SpringData+SpringDataJPA)",
+                level: 1
             },
             {
                 name: "Oracle / MySql",
@@ -290,39 +499,39 @@ $(function () {
         ],
         skillsCore_right: [
             {
-                name: "Bootstrap / Vue",
+                name: "Bootstrap(css库+Js库+Icons库+Themes+Layout)",
                 level: 2
+            },
+            {
+                name: "Java基础/高级",
+                level: 2
+            },
+            {
+              name: "SpringBoot(Spring Security+Spring Cloud+Spring Boot Actuator)",
+              level: 1
             },
             {
                 name: "Svn / Git",
                 level: 2
             },
-            {
-                name: "SpringBoot / SpringCloud",
-                level: 1
-            },
         ],
         skillOther_left: [
             {
-                name:"ES6+",
+                name:"ES6+ / Java8 +",
                 level:1
             },
             {
-                name:"Spring / SpringMVC / Mybatis",
-                level:1
-            },
-            {
-                name:"Linux",
-                level:0
-            },
-            {
-                name:"Redis / MongoDB",
-                level:0
-            },
+                name: "Nvm / Node / Webpack / Vite / Linux",
+                level: 0
+            }
         ],
         skillOther_right: [
             {
-                name: "Java8 +",
+                name:"Redis / MongoDB (Spring Data Redis + Spring Data MongoDB)",
+                level:0
+            },
+            {
+                name: "Eclipse / IDEA / Sublime /Xmind / Typora /Vscode",
                 level: 1
             }
         ],
@@ -464,8 +673,8 @@ $(function () {
             ],
             Java: [
                 {
-                    url: "https://gitee.com/JavaObjects/my12306",
-                    title: "实现12306的一小部分功能",
+                    url: "https://gitee.com/JavaObjects/tickets",
+                    title: "购票网",
                     img: "images/Java1.png",
                     h3: "购票网",
                     p: "实现JavaWeb的基本功能"
@@ -478,11 +687,11 @@ $(function () {
                     p: "企业项目，企业级网络流量监控，数据分析，拓扑梳理"
                 },
                 {
-                    url: "https://gitee.com/JavaObjects/TSMCP",
-                    title: "企业级网络流量监控，数据分析，拓扑梳理",
-                    img: "images/tsmcp.png",
-                    h3: "腾讯智能制造云平台",
-                    p: "腾讯智能制造云平台"
+                    url: "https://gitee.com/JavaObjects/hrm",
+                    title: "人力资源管理系统",
+                    img: "images/Java3.png",
+                    h3: "人力资源管理系统",
+                    p: "SpringBoot 2.6.3 + MyBatis-Plus 3.5.1 + Vue 2.6.11 + ElementUI 2.15.7 表格图形等技术体现"
                 },
             ]
         },
@@ -529,11 +738,4 @@ $(function () {
         }
     };
     $("#projects #horizontalTab").html(projectConfig.generateprojecthtml());
-
-
-
-
-
-
-
 });

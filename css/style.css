@@ -134,9 +134,14 @@ ul.nav.navbar li a:hover,ul.nav.navbar li a.active,ul.nav.navbar li a:focus{
 }
 /*--//top-nav--*/
 /*--about--*/
-.about,.work,.education,.skills,.portfolio,.contact{
-	padding:6em 0;
+/*.about,.work,.education,.skills,.portfolio,.contact{*/
+/*	padding:6em 0;*/
+/*}*/
+
+.about,.work,.education,.otherskills,.skills,.portfolio,.contact {
+    padding: 2em 0 1em 0;
 }
+
 h3.title {
     font-size: 4em;
     text-align: center;
@@ -180,10 +185,17 @@ p {
 .work-left {
     text-align: right;
     padding: 3em 5em 0 0;
+
 }
 .work-right {
-    border-left: 1px solid #999;
+    /*border-left: 1px solid #999;*/
     padding: 2.5em 0 2em 6em;
+}
+.time_border_right {
+    border-right: 1px solid #999;
+}
+.time_border_left {
+    border-left: 1px solid #999;
 }
 .work-info h4 {
     font-size: 1.2em;
@@ -213,6 +225,12 @@ p {
     display: inline-block;
     padding: 0 1.2em;
 }
+
+.work-info .cus_h5{
+    display: block;
+    border: none;
+}
+
 .work-info h5 span.glyphicon {
     font-size: 0.9em;
     color: #fff;
@@ -270,12 +288,13 @@ p {
 }
 /*--//education--*/
 /*--skills--*/
-.skills{
+.skills
+{
 	background:#000;
 }
-.otherskills{
-    background:#000;
-}
+/*.otherskills {*/
+/*    background: #262424;*/
+/*}*/
 .bar-grids {
     padding: 0 4em;
 }

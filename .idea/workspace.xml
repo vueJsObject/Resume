@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2411f640-2b76-46fb-9079-236070282d76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/homeCall.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/topNavCall.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/skillCall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/topNavCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/topNavCall.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +153,7 @@
       <workItem from="1573519419947" duration="6415000" />
       <workItem from="1573695761928" duration="1879000" />
       <workItem from="1674980660537" duration="1271000" />
-      <workItem from="1686018763190" duration="47161000" />
+      <workItem from="1686018763190" duration="69201000" />
     </task>
     <servers />
   </component>
