@@ -806,6 +806,9 @@ h3.title {
     float: left;
     width: 50%;
 }
+.about_p,.about_h4{
+    padding-left: 2em;
+}
 .portfolio-grids {
     margin-top: 1em;
     width: 33.33%;
@@ -911,6 +914,9 @@ h3.title {
 .bar-grids {
     padding: 0 1.5em;
 }
+.about_p,.about_h4{
+    padding-left: 1.5em;
+}
 .bar-grids h6 {
     font-size: 1em;
 }
@@ -985,6 +991,9 @@ p {
     padding: 0 1em;
     float: none;
     width: 100%;
+}
+.about_p,.about_h4{
+    padding-left: 1em;
 }
 .progress {
     margin-bottom: 1.5em;
@@ -1118,6 +1127,9 @@ h3.title {
 }
 .bar-grids {
     padding: 0;
+}
+.about_p,.about_h4{
+    padding-left: 0;
 }
 .bar-grids h6 {
     font-size: 0.9em;
