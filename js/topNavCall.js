@@ -25,14 +25,19 @@ $(function () {
                 id: "otherskills",
                 content: "其它技能"
             },
+
             {
                 id: "projects",
                 content: "部分作品"
             },
             {
-                id: "hobby",
-                content: "兴趣爱好"
+                id: "about",
+                content: "自我评价"
             },
+            // {
+            //     id: "hobby",
+            //     content: "兴趣爱好"
+            // },
             // {
             //     id: "work",
             //     content: "工作经历"
@@ -64,7 +69,7 @@ $(function () {
                         '        <div class="container">\n' +
                         '           <h3 class="title">\n' +
                         '               <span>' + navArray[i].content + '</span>\n' +
-                        '               <small style="font-size: 35%;">了解 < 熟悉 < 熟练 < 精通 </small>\n' +
+                        '               <small style="font-size: 35%;">了解 < 熟悉 < 熟练 < 熟悉 </small>\n' +
                         '</h3>\n' +
                         '        </div>\n' +
                         '    </div>\n';
@@ -268,6 +273,7 @@ $(function () {
                 '            </div>';
         }
     };
+    $("title").text("涎涎的简历");
     $(".navbarContent").html(topNavConfig.generateNavbarContent());
     $(".top-nav").after(topNavConfig.generateNavbarAfterBox());
 
@@ -282,53 +288,125 @@ $(function () {
 
     let abougConfig = {
         data: {
-            content:  '',
+            content:  [
+                {
+                    title: "后端：",
+                    data: [
+                        "1.	熟悉Java常用API，熟悉JVM、IO、NIO、SOCKET、多线程、并发、网络，深刻理解面向对象、设计原则、封装抽象等,了解并能使用常用的第三方库，例如Apache的commons集合类、Guava等；",
+                        "2. 熟悉Java常并发包常用工具（如，锁，并发容器等等）/ 底层逻辑，熟练运用面向对象编程,熟练java web开发相关技术，熟悉常用的设计模式,掌握Java中常用的数据结构；了解JDK的新特性； ",
+                        "3. 熟悉git、maven的常用命令；熟练运用idea工具高效编码 ；会使用工具查询日志；熟悉maven的常用插件；能够定位报警中的问题；",
+                        "4.	熟练掌握Spring、Spring Mvc、Spring Boot、SpringCloud、Mybatis、Dubbo、ElasticSearch、等主流开发框架并了解底层原理；对spring对应的事务管理中的传播策略十分熟悉",
+                        "5.	熟练掌握缓存（Redis/mongodb），消息中间件（Kafka/RocketMQ），数据库（MySQL/Oracle/OceanBase）等开源数据存储的使用、性能分析及调优，及其优化技巧，",
+                        "6. 熟悉容器（Docker/K8s）等技术并了解其原理，有大数据量存储及使用经验; ",
+                        "7. 熟练掌握Mysql，并且能够正确熟练的建立索引和业务中要能正确合理的书写sql，有效的利用mysql索引",
+                        "8. 基础扎实，尤其是对并发编程有足够认识，对关系型数据库事务有相当认识，能够熟练进行常规的sql优化，对分布式事务有相当认知",
+                        "9.	熟练掌握分布式、缓存、消息等中间件的使用，了解其原理和机制,有一定的系统调优能力，有Thrift相关经验",
+                        "10. 熟悉springcloud微服务架构，使用过vue熟练前后端分离的架构设计，有微服务项目经验;",
+                        "11. 熟悉微服务相关技术栈Dubbo/Eureka/Nacos等；",
+                        "12. 熟悉HTTP编程，能部署管理Tomcat，有Nginx使用经验",
+                        "13. 熟悉Linux环境下系统的部署常用的指令、SQL脚本的编写及优化，能够做基本的操作系统管理维护工作；",
+                        "14. 有高并发互联网应用项目、互联网公司架构、微服务架构、分布式高并发系统开发设计经验、有较大规模微服务系统建设经历；",
+                        "15. 有大型分布式、高并发(缓存架构、消息异步队列架构及分库分表)、高可用性系统设计和稳定性架构、多层架构体系开发 / 大型分布式 / 高并发 / 高负载 /高可用性系统开发实战经验",
+                        "16. 良好的编码习惯和代码能力，思路清晰，善于思考，具备一定的系统设计能力,良好的团队合作精神和积极主动的沟通意识，具有对新技术的追求精神，乐于分享",
+                        "17. 具有良好的文档撰写习惯、文字表达能力及沟通能力，工作积极主动，沟通能力和团队合作精神，学习能力强，能够自我驱动学习掌握前沿技术，抗压能力强，可以接受短期高强度加班；",
+                    ]
+                },
+                {
+                    title: "前端：",
+                    data: [
+                        "1, 熟悉W3C标准，对表现与数据分离、Web语义化等有较为深刻的理解；",
+                        "2. 熟悉JavaScrpt/HTML5/CSS3/Ajax等Web开发技术,熟悉页面架构和布局,能够独立开发 JS 模块，具有编写原生 JS 代码的能力",
+                        "3. 熟悉ECMAScript、ES6等技术标准，有TypeScript开发经验；",
+                        "4. 熟悉常见开源前端框架(React/Angular/Vue/JQuery)，理解源码，可对其扩展和优化，自己开发过公共开发库、框架,有 Gridsome 使用经验",
+                        "5. 熟练使用less或sass进行前端开发，能够独立解决不同设备和环境下H5页面的UI兼容问题；" ,
+                        "6. 熟悉Babel/Webpack/Gulp等构建工具配置和使用,对前端工程化与模块化/组件化开发有一定了解，能够设计高扩展性的前端应用",
+                        "7. 熟悉Node.js应用开发，有Express/Koa/Egg.js等开发经验；",
+                        "8. 熟悉 RESTful API,了解npm/yarn/cnpm等工具的常见使用方法； ",
+                        "9. 熟悉浏览器的资源加载、渲染机制，熟悉性能优化、跨平台兼容性问题，有Web安全、以及系统架构能力和经验",
+                        "10. 了解网络安全,有PostgreSQL/MySQL/Redis/Memcache等关系型非关系型数据库使用经验",
+                        "11. 熟悉敏捷开发流程，能够快速融入环境，与产品、后端、测试保持良好的沟通和协作；",
+                        "12. 技术视野广阔，有大型网站前端架构、性能、易用性等方面的实践经验；具备优秀的学习能力",
+                        "13. 能够清晰理解业务，具备服务业务的合作精神；开发过程中可以识别出业务扩展点",
+                        "14. 具备工程化的前端思维，具备较好的问题分析与解决能力；对系统性能优化有一定的思考，有一定的项目管理概念，可以识别出项目风险，" ,
+                        "15. 具备一定的C端项目经验及线上问题排查能力；有后台管理系统开发经验,有独立负责项目经验",
+                        "16. 具备一定的数据结构、算法基础；有较强的学习能力，独立思考能力；能快速上手新项目的需求设计和开发；",
+                        "17. 具有良好的沟通能力，对技术有强烈的进取心，具有良好的分析和解决问题的能力，具备良好的团队合作精神。",
+                        "18. 对技术有激情，喜欢钻研，能快速接受和掌握新技术，有较强的独立、主动的学习能力，良好的沟通表达能力和团队协作能力",
+                        "19. 拥有良好的代码写作习惯以及职业的工作态度.能利用自身技术能力提升团队整体研发效率，提高团队影响力",
+                        "20. 思路清晰，善于学习、总结，乐于分享,具有全面（pc端、手机端、小程序等）开发经验",
+                    ]
+                }
+            ],
             aboutbox: {
-                title: "荣誉证书",
+                // title: "荣誉证书",
+                title: "",
                 item: [
-                    "绵阳师范专科学历",
-                    "北京师范本科学历",
-                    "工信部认证中级网络工程师",
-                    "连续编程十小时不累奖",
-                    "与人相处愉快不坑队友"
+                    // "绵阳师范专科学历",
+                    // "北京师范本科学历",
+                    // "工信部认证中级网络工程师",
+                    // "连续编程十小时不累奖",
+                    // "与人相处愉快不坑队友"
                 ]
             }
         },
         generateAboutLeftHtml: () => {
-            return '<div class="col-md-8 about-left ">\n' + abougConfig.data.content + '</div>\n'
+            let html = '';
+            if(abougConfig.data.content.length){
+                let content = abougConfig.data.content;
+                for (let i = 0; i < content.length; i++) {
+                    let title = content[i].title,
+                        data = content[i].data;
+                    if(title){
+                        html += '<h4 class="about_h4">' + title + '</h4>\n'
+                    }
+                    if(data.length){
+                        for (let j = 0; j < data.length; j++) {
+                            html += '<p class="about_p">' + data[j] + '</p>\n';
+                        }
+                    }
+                    // html += '<p class="about_p">' + content[i] + '</p>\n';
+                }
+            }
+            if(abougConfig.data.aboutbox.item.length){
+                return '<div class="col-md-8 about-left ">\n' + html + '</div>\n'
+            }else {
+                return '<div class="col-md-12">\n' + html + '</div>\n'
+            }
         },
         generateAboutRightHtml: () => {
-            let html = '<div class="col-md-4 about-right">\n' +
-                '<ul>\n';
+            let html = '';
             if(abougConfig.data.aboutbox.item.length){
+                html += '<div class="col-md-4 about-right">\n';
+                html += '<ul>\n';
+
                 let itemArray = abougConfig.data.aboutbox.item;
                 let title = abougConfig.data.aboutbox.title;
                 html += '<h5>'+ title +'</h5>\n';
                 for (let i = 0; i < itemArray.length; i++) {
                     html += '<li><span class="glyphicon glyphicon-menu-right"></span>'+ itemArray[i] +'</li>\n';
                 }
+                html += '</ul>\n' +
+                    '<div class="clearfix"> </div>\n' +
+                    '</div>\n' +
+                    '<div class="clearfix"> </div>';
             }
-            html += '</ul>\n' +
-                '<div class="clearfix"> </div>\n' +
-                '</div>\n' +
-                '<div class="clearfix"> </div>';
             return html;
         },
         generateAboutAllHtml: () => {
             return abougConfig.generateAboutLeftHtml() + abougConfig.generateAboutRightHtml();
         }
     }
-    // $("#about > .container > .title").after(abougConfig.generateAboutAllHtml());
+    $("#about > .container > .title").after(abougConfig.generateAboutAllHtml());
 
     let hobbyConfig = {
         data: [
             {
                 title: "五笔",
-                content: "喜欢收集生僻字进行拆解"
+                content: "喜欢收集一些在交流过程中遇到的生僻字进行反复拆解"
             },
             {
                 title: "背单词",
-                content: "平时喜欢收集一些计算机专业方面的英文单词"
+                content: "喜欢收集一些工作中遇到的计算机专业方面的英文单词"
             },
             {
                 title: "做菜",
@@ -481,19 +559,15 @@ $(function () {
         levelPointArray: ["25%","50%","75%","100%"],
         skillsCore_left: [
             {
-                name: "Html / Css / JavaScript / Jquery",
+                name: "Html / Css / JavaScript / Jquery / Java基础 /高级",
                 level: 2
             },
             {
-                name: "Vue(vue + Router + Vuex + CLI + Devtools)",
+                name: "Vue(vueJs + Vue Router + Vuex + Vue CLI + Vue Devtools)",
                 level: 1
             },
             {
                 name: "SpringBoot(SpringFramework+SpringMVC+SpringData+SpringDataJPA)",
-                level: 1
-            },
-            {
-                name: "Oracle / MySql",
                 level: 1
             },
         ],
@@ -503,37 +577,53 @@ $(function () {
                 level: 2
             },
             {
-                name: "Java基础/高级",
-                level: 2
-            },
-            {
               name: "SpringBoot(Spring Security+Spring Cloud+Spring Boot Actuator)",
               level: 1
             },
             {
-                name: "Svn / Git",
-                level: 2
+                name: "ES6+ / Java8 +/ Oracle / MySql",
+                level: 1
             },
         ],
         skillOther_left: [
             {
-                name:"ES6+ / Java8 +",
-                level:1
+                name: "JQuery UI / Jquery.jeBox / JQuery.jeDate / Jquery.dad / Jqeury.mosewheel",
+                level: 1
             },
             {
-                name: "Nvm / Node / Webpack / Vite / Linux",
+                name: "Chosen / Icheck / Select / Bootstrap-select / Bootstrap-table",
+                level: 1
+            },
+            {
+                name: "Eclipse /IDEA /Sublime /Vscode /Typora /Xmind /Svn /Git",
+                level: 2
+            },
+            {
+                name: "React / Angular / Nvm / Node / Webpack / Vite / WebSocket / Nginx / Linux",
                 level: 0
-            }
+            },
+            {
+                name: "Tomcat / Undertow / Jboss / Jetty / Docker / Podman",
+                level: 0
+            },
         ],
         skillOther_right: [
             {
-                name:"Redis / MongoDB (Spring Data Redis + Spring Data MongoDB)",
+                name: "JQuery Gridly / JQuery.jsPlumb / HTML5Shiv / Respond / tableExport",
+                level: 1
+            },
+            {
+                name:"Bootstrap-table-export/ Jtopo /Highcharts /ECharts /d3",
+                level:1
+            },
+            {
+                name:"Redis / MongoDB / DB2 / (Spring Data Redis + Spring Data MongoDB)",
                 level:0
             },
             {
-                name: "Eclipse / IDEA / Sublime /Xmind / Typora /Vscode",
-                level: 1
-            }
+              name: "Github Action",
+              level: 2
+            },
         ],
         generateProgressHtml: (nameText, levelText, levelPoint) => {
             return '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n' +

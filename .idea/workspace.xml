@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/topNavCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/topNavCall.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Google/yanbo0039.github.io",
+    "last_opened_file_path": "E:/Google/vuepress-theme-hope",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -153,7 +152,7 @@
       <workItem from="1573519419947" duration="6415000" />
       <workItem from="1573695761928" duration="1879000" />
       <workItem from="1674980660537" duration="1271000" />
-      <workItem from="1686018763190" duration="69201000" />
+      <workItem from="1686018763190" duration="107748000" />
     </task>
     <servers />
   </component>

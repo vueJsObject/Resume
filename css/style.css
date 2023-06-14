@@ -141,7 +141,9 @@ ul.nav.navbar li a:hover,ul.nav.navbar li a.active,ul.nav.navbar li a:focus{
 .about,.work,.education,.otherskills,.skills,.portfolio,.contact {
     padding: 2em 0 1em 0;
 }
-
+.about h3.title{
+    margin-bottom: 0.3em;
+}
 h3.title {
     font-size: 4em;
     text-align: center;
@@ -230,7 +232,19 @@ p {
     display: block;
     border: none;
 }
-
+.about_p {
+    padding-left: 4em;
+    color: #fff;
+}
+.about_h4 {
+    color: #c9b0b0;
+    font-size: 2em;
+    padding-left: 2em;
+    margin-bottom: 0.3em;
+}
+.about_h4:not(:first-child) {
+    margin-top: 0.3em;
+}
 .work-info h5 span.glyphicon {
     font-size: 0.9em;
     color: #fff;
