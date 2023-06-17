@@ -293,7 +293,7 @@ $(function () {
                     title: "后端：",
                     data: [
                         "1.	熟悉Java常用API，熟悉JVM、IO、NIO、SOCKET、多线程、并发、网络，深刻理解面向对象、设计原则、封装抽象等,了解并能使用常用的第三方库，例如Apache的commons集合类、Guava等；",
-                        "2. 熟悉Java常并发包常用工具(如:锁、并发容器等等)/底层逻辑，熟练运用面向对象编程,熟练Java Web开发相关技术，熟悉常用的设计模式,掌握Java中常用的数据结构；了解JDK的新特性",
+                        "2. 熟悉Java并发包常用工具(如:锁、并发容器等等)/底层逻辑，熟练运用面向对象编程,熟练Java Web开发相关技术，熟悉常用的设计模式,掌握Java中常用的数据结构；了解JDK的新特性",
                         "3. 熟悉git、maven的常用命令,熟练运用idea工具高效编码,会使用工具查询日志,熟悉maven的常用插件,能够定位报警中的问题,",
                         "4.	熟练掌握Spring/Spring Mvc/Spring Boot/SpringCloud/Mybatis/Dubbo/ElasticSearch等主流开发框架并了解底层原理,对Spring对应的事务管理中的传播策略十分熟悉",
                         "5.	熟练掌握缓存（Redis/Mongodb）,消息中间件（Kafka/RocketMQ）,数据库(MySQL/Oracle/OceanBase)等开源数据存储的使用、性能分析及调优，及其优化技巧",
