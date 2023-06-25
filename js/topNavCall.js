@@ -623,6 +623,10 @@ $(function () {
               name: "Github Action",
               level: 2
             },
+            {
+                name: "构建工具:Vite/Webpack/Babel/Gulp/Grunt/Parcel/Rollup/Brunch/browserify",
+                level: 0
+            },
         ],
         generateProgressHtml: (nameText, levelText, levelPoint) => {
             return '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n' +
