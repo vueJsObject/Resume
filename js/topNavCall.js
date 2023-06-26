@@ -594,16 +594,33 @@ $(function () {
                 level: 1
             },
             {
-                name: "Eclipse /IDEA /Sublime /Vscode /Typora /Xmind /Svn /Git",
-                level: 2
+                name: "Xmind / MindManager / Typora ",
+                level: 2,
+                title: "思维脑图工具和Markdown 编辑器"
             },
             {
-                name: "React / Angular / Nvm / Node / Webpack / Vite / WebSocket / Nginx / Linux",
+                name: "Eclipse/IDEA/Sublime/Visual Studio Code/Visual Studio/NetBeans",
+                level: 2,
+                title: "开发工具"
+            },
+            {
+                name: "Git / Svn / Mercurial / Perforce",
+                level: 2,
+                title: "版本控制工具"
+            },
+            {
+                name: "React / Angular / Nvm / Node / WebSocket / Nginx / Linux",
                 level: 0
             },
             {
-                name: "Tomcat / Undertow / Jboss / Jetty / Docker / Podman",
-                level: 0
+                name: "Docker/Podman/Kubernetes(K8s)/Apache Mesos/OpenShift",
+                level: 0,
+                title: "Java容器化工具"
+            },
+            {
+                name: "Tomcat/Jetty/Undertow/Jboss/GlassFish/WildFly/NanoHTTPD/Simple",
+                level: 0,
+                title: "JavaWeb服务器"
             },
         ],
         skillOther_right: [
@@ -616,32 +633,60 @@ $(function () {
                 level:1
             },
             {
-                name:"Redis / MongoDB / DB2 / (Spring Data Redis + Spring Data MongoDB)",
-                level:0
+                name:"Redis / MongoDB / Elasticsearch / Cassandra / Neo4j ",
+                level:0,
+                title: "非关系型数据库"
             },
             {
-              name: "Github Action",
-              level: 2
+                name:"SQL Serve / PostgreSQL / DB2 / SQLite / MariaDB / RDS / Cloud SQL",
+                level:0,
+                title: "关系型数据库"
             },
             {
-                name: "构建工具:Vite/Webpack/Babel/Gulp/Grunt/Parcel/Rollup/Brunch/browserify",
-                level: 0
+                name: "Github Action/Jenkins/Travis CI/CircleCI/(GitLab CI/CD)",
+                level: 2,
+                title: "自动化构建和部署工具"
+            },
+            {
+                name: "Vite/Webpack/Babel/Gulp/Grunt/Parcel/Rollup/Brunch/browserify",
+                level: 0,
+                title:"前端构建打包工具"
+            },
+            {
+                name: "Maven / Gradle / Ant",
+                level: 0,
+                title: "Java自动化构建工具"
+            },
+            {
+                name: "Postman / Swagger / Insomnia / JMeter",
+                level: 0,
+                title: "API测试工具"
             },
         ],
-        generateProgressHtml: (nameText, levelText, levelPoint) => {
-            return '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n' +
+        generateProgressHtml: (nameText, levelText, levelPoint,titleText) => {
+            let h6 = '';
+            if(titleText){
+                h6 = '<h6 title="'+ titleText + '">' + nameText + '<span> ' + levelText + ' </span></h6>\n';
+            }else {
+                h6 = '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n';
+            }
+
+            return h6 +
                 '<div class="progress">\n' +
                 '    <div class="progress-bar progress-bar-striped active" style="width: ' + levelPoint + '">\n' +
                 '    </div>\n' +
                 '</div>\n';
+
+
         },
         generateCoreSkillshtml: () => {
             if(skillObj.skillsCore_left.length > 0){
                 for (let i = 0; i < skillObj.skillsCore_left.length; i++) {
                     let nameText = skillObj.skillsCore_left[i].name;
+                    let titleText = skillObj.skillsCore_left[i].title;
                     let levelText = skillObj.levelTextArray[skillObj.skillsCore_left[i].level];
                     let levelPoint = skillObj.levelPointArray[skillObj.skillsCore_left[i].level];
-                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint,titleText);
 
                     skillObj.skillsCore_left_html += progressHtml;
                 }
@@ -649,9 +694,10 @@ $(function () {
             if(skillObj.skillsCore_right.length > 0){
                 for (let i = 0; i < skillObj.skillsCore_right.length; i++) {
                     let nameText = skillObj.skillsCore_right[i].name;
+                    let titleText = skillObj.skillsCore_right[i].title;
                     let levelText = skillObj.levelTextArray[skillObj.skillsCore_right[i].level];
                     let levelPoint = skillObj.levelPointArray[skillObj.skillsCore_right[i].level];
-                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint,titleText);
 
                     skillObj.skillsCore_right_html += progressHtml;
                 }
@@ -665,9 +711,10 @@ $(function () {
             if(skillObj.skillOther_left.length > 0){
                 for (let i = 0; i < skillObj.skillOther_left.length; i++) {
                     let nameText = skillObj.skillOther_left[i].name;
+                    let titleText = skillObj.skillOther_left[i].title;
                     let levelText = skillObj.levelTextArray[skillObj.skillOther_left[i].level];
                     let levelPoint = skillObj.levelPointArray[skillObj.skillOther_left[i].level];
-                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint,titleText);
 
                     skillObj.skillsOther_left_html += progressHtml;
                 }
@@ -675,9 +722,10 @@ $(function () {
             if(skillObj.skillOther_right.length > 0){
                 for (let i = 0; i < skillObj.skillOther_right.length; i++) {
                     let nameText = skillObj.skillOther_right[i].name;
+                    let titleText = skillObj.skillOther_right[i].title;
                     let levelText = skillObj.levelTextArray[skillObj.skillOther_right[i].level];
                     let levelPoint = skillObj.levelPointArray[skillObj.skillOther_right[i].level];
-                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint);
+                    let progressHtml = skillObj.generateProgressHtml(nameText, levelText, levelPoint,titleText);
 
                     skillObj.skillsOther_right_html += progressHtml;
                 }
