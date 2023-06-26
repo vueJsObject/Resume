@@ -326,8 +326,13 @@ p {
     margin-bottom: 0.6em;
 }
 .bar-grids h6 span {
-    float: right;
     font-size: 0.9em;
+}
+.bar-grids h6 .title_spn {
+    color: #c4e3f3;
+}
+.bar-grids h6 span:last-child {
+    float: right;
 }
 /*--//skills--*/
 /*--portfolio--*/

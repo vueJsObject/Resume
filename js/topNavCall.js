@@ -686,9 +686,16 @@ $(function () {
         generateProgressHtml: (nameText, levelText, levelPoint,titleText) => {
             let h6 = '';
             if(titleText){
-                h6 = '<h6 title="'+ titleText + '">' + nameText + '<br><span> ' + levelText + ' </span></h6>\n';
+                h6 = '<h6>' +
+                    '<span class="title_spn">'+ titleText + '：</span><br>' +
+                    '<span>' + nameText + '</span><br>' +
+                    '<span> ' + levelText + ' </span>' +
+                    '</h6>\n';
             }else {
-                h6 = '<h6>' + nameText + '<br><span> ' + levelText + ' </span></h6>\n';
+                h6 = '<h6>' +
+                    '<span>' + nameText + '</span><br>' +
+                    '<span> ' + levelText + ' </span>' +
+                    '</h6>\n';
             }
 
             return h6 +
