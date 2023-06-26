@@ -594,12 +594,12 @@ $(function () {
                 level: 1
             },
             {
-                name: "Xmind / MindManager / Typora ",
+                name: "Xmind / MindManager / Typora / 有道云笔记",
                 level: 2,
                 title: "思维脑图工具和Markdown 编辑器"
             },
             {
-                name: "Eclipse/IDEA/Sublime/Visual Studio Code/Visual Studio/NetBeans",
+                name: "Eclipse / IDEA / Sublime / Visual Studio Code / Visual Studio / NetBeans",
                 level: 2,
                 title: "开发工具"
             },
@@ -613,14 +613,24 @@ $(function () {
                 level: 0
             },
             {
-                name: "Docker/Podman/Kubernetes(K8s)/Apache Mesos/OpenShift",
+                name: "Docker / Podman / Kubernetes(K8s) / Apache Mesos / OpenShift",
                 level: 0,
                 title: "Java容器化工具"
             },
             {
-                name: "Tomcat/Jetty/Undertow/Jboss/GlassFish/WildFly/NanoHTTPD/Simple",
+                name: "Tomcat / Jetty / Undertow / Jboss / GlassFish / WildFly / NanoHTTPD ",
                 level: 0,
                 title: "JavaWeb服务器"
+            },
+            {
+                name: "Chrome DevTools / Firebug",
+                level: 1,
+                title: "Web应用程序调式工具"
+            },
+            {
+                name: "Memcached / Hazelcast / Ignite / Couchbase",
+                level: 0,
+                title: "分布式内存对象缓存系统"
             },
         ],
         skillOther_right: [
@@ -662,13 +672,23 @@ $(function () {
                 level: 0,
                 title: "API测试工具"
             },
+            {
+                name: "Navicat / PLSQL / RedisDesktopManager",
+                level: 1,
+                title: "数据库管理工具"
+            },
+            {
+                name: "向日葵 / ToDesk",
+                level: 1,
+                title: "远程连接工具"
+            },
         ],
         generateProgressHtml: (nameText, levelText, levelPoint,titleText) => {
             let h6 = '';
             if(titleText){
-                h6 = '<h6 title="'+ titleText + '">' + nameText + '<span> ' + levelText + ' </span></h6>\n';
+                h6 = '<h6 title="'+ titleText + '">' + nameText + '<br><span> ' + levelText + ' </span></h6>\n';
             }else {
-                h6 = '<h6>' + nameText + '<span> ' + levelText + ' </span></h6>\n';
+                h6 = '<h6>' + nameText + '<br><span> ' + levelText + ' </span></h6>\n';
             }
 
             return h6 +
