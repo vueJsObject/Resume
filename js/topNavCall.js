@@ -610,7 +610,18 @@ $(function () {
             },
             {
                 name: "React / Angular / Nvm / Node / WebSocket / Nginx / Linux",
-                level: 0
+                level: 0,
+                title: "前端框架及相关技术"
+            },
+            {
+                name: "Dubbo / Spring Cloud / Thrift / gRPC / ServiceComb",
+                level: 0,
+                title: "Java分布式服务框架"
+            },
+            {
+                name: "Kubernetes / Spring Cloud / Istio / ServiceComb",
+                level: 0,
+                title: "Java微服务架构"
             },
             {
                 name: "Docker / Podman / Kubernetes(K8s) / Apache Mesos / OpenShift",
@@ -623,7 +634,7 @@ $(function () {
                 title: "JavaWeb服务器"
             },
             {
-                name: "Chrome DevTools / Firebug",
+                name: "Chrome DevTools / Firebug / Firefox DevTools",
                 level: 1,
                 title: "Web应用程序调式工具"
             },
@@ -631,6 +642,11 @@ $(function () {
                 name: "Memcached / Hazelcast / Ignite / Couchbase",
                 level: 0,
                 title: "分布式内存对象缓存系统"
+            },
+            {
+                name: "Sass / Less / Stylus",
+                level: 0,
+                title: "Css预处理器"
             },
         ],
         skillOther_right: [
@@ -653,12 +669,12 @@ $(function () {
                 title: "关系型数据库"
             },
             {
-                name: "Github Action/Jenkins/Travis CI/CircleCI/(GitLab CI/CD)",
+                name: "Github Action / Jenkins / Travis CI / CircleCI / (GitLab CI/CD)",
                 level: 2,
                 title: "自动化构建和部署工具"
             },
             {
-                name: "Vite/Webpack/Babel/Gulp/Grunt/Parcel/Rollup/Brunch/browserify",
+                name: "Vite / Webpack / Babel / Gulp / Grunt / Parcel / Rollup / Brunch / browserify",
                 level: 0,
                 title:"前端构建打包工具"
             },
@@ -681,6 +697,21 @@ $(function () {
                 name: "向日葵 / ToDesk",
                 level: 1,
                 title: "远程连接工具"
+            },
+            {
+                name: "Express / Koa / Egg.js / NestJS",
+                level: 0,
+                title: "Node.js的Web应用程序框架"
+            },
+            {
+                name: "Npm / Cnpm / Yarn / Pnpm",
+                level: 0,
+                title: "前端包管理工具"
+            },
+            {
+                name: "Jest / Mocha / Cypress",
+                level: 0,
+                title: "前端自动化测试工具"
             },
         ],
         generateProgressHtml: (nameText, levelText, levelPoint,titleText) => {
