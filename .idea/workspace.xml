@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2411f640-2b76-46fb-9079-236070282d76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/topNavCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/topNavCall.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Google/yanbo0039.github.io",
+    "last_opened_file_path": "E:/Google/vuepress-theme-hope",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,7 +153,7 @@
       <workItem from="1687010848555" duration="9770000" />
       <workItem from="1687711830667" duration="17926000" />
       <workItem from="1688147689175" duration="1857000" />
-      <workItem from="1688246264771" duration="3076000" />
+      <workItem from="1688246264771" duration="4581000" />
     </task>
     <servers />
   </component>
