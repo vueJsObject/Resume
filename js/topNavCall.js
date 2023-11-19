@@ -897,21 +897,21 @@ $(function () {
                     title: "购票网",
                     img: "images/Java1.png",
                     h3: "购票网",
-                    p: "实现JavaWeb的基本功能"
+                    p: "Java EE(Filter + HttpSession + servlet + JDBC连接池 + 单例模式) + Jsp 购票网"
                 },
                 {
                     url: "https://gitee.com/JavaObjects/ipm_boot",
                     title: "企业级网络流量监控，数据分析，拓扑梳理",
                     img: "images/Java2.png",
                     h3: "全栈性能管理与流量分析平台",
-                    p: "企业项目，企业级网络流量监控，数据分析，拓扑梳理"
+                    p: "SSM（Spring + Spring MVC + MyBatis）+BootStrap + HighCharts +Jtopo + d3 流量监控，网络安全，数据访问"
                 },
                 {
-                    url: "https://gitee.com/JavaObjects/hrm",
-                    title: "人力资源管理系统",
-                    img: "images/Java3.png",
-                    h3: "人力资源管理系统",
-                    p: "SpringBoot 2.6.3 + MyBatis-Plus 3.5.1 + Vue 2.6.11 + ElementUI 2.15.7 表格图形等技术体现"
+                    url: "https://github.com/javaobjects/yiling",
+                    title: "以岭药业后台管理系统",
+                    img: "images/Java4.png",
+                    h3: "以岭药业后台管理系统",
+                    p: "SpringCloud + SpringBoot + Mybatis-plus + Dubbo +RPC + Elasticsearch + Apache RocketMQ + Redis + Mysql + Vue + Element-UI + Echarts"
                 },
             ]
         },
