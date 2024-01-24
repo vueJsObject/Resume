@@ -22,14 +22,42 @@
   </picture>
 
 <!-- ########################################## 分割 ########################################## -->
-<img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
+
+[//]: # (<img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />)
+
 
 <!-- github-readme-streak-stats 连续提交代码天数记录 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=dark&hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=light&hide_border=true"/>
-  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=default&hide_border=true" />
-</picture>
+
+[//]: # (<picture>)
+
+[//]: # (  <source media="&#40;prefers-color-scheme: dark&#41;" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=dark&hide_border=true" />)
+
+[//]: # (  <source media="&#40;prefers-color-scheme: light&#41;" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=light&hide_border=true"/>)
+
+[//]: # (  <img style="width: 98%;" src="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=default&hide_border=true" />)
+
+[//]: # (</picture>)
+
+<!-- ########################################## 分割 ########################################## -->
+
+[//]: # (<img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />)
+
+[//]: # (<!-- GitHub metrics 信息指标 -->)
+
+[//]: # (<div align="center">)
+
+[//]: # (<img width="120%" src="https://repobeats.axiom.co/api/embed/dd42bad8effa7ab44d2f3124414ee110611e044a.svg" />)
+
+[//]: # (</div>)
+
+<!-- ########################################## 分割 ########################################## -->
+<img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
+<div align="center" >
+<!--  skill badge 技能徽章 -->
+<!-- programming tool icon 编程工具图标 -->
+<img src="https://skillicons.dev/icons?i=html,css,javascript,jquery,bootstrap,vue,react,typescript,vite,mongodb,nodejs,mysql,redis,java,spring,python,php,linux,git,eclipse,idea,vscode,github,ps,ai,pr,c,cpp,discord,twitter,mongodb,instagram" /><br>
+</div>
+
 <!-- ########################################## 分割 ########################################## -->
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
 
@@ -37,20 +65,9 @@
 <!-- GitHub 数据统计 -->
 <img width="98%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=yanbo0039&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite" />
 </div>
-<!-- ########################################## 分割 ########################################## -->
+
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
-<div align="center" >
-<!--  skill badge 技能徽章 -->
-💪 技能汇总
-<!-- programming tool icon 编程工具图标 -->
-<img src="https://skillicons.dev/icons?i=html,css,javascript,jquery,bootstrap,vue,react,typescript,vite,mongodb,nodejs,mysql,redis,java,spring,python,php,linux,git,eclipse,idea,vscode,github,ps,ai,pr,c,cpp,discord,twitter,mongodb,instagram" /><br>
-</div>
-<!-- ########################################## 分割 ########################################## -->
-<img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
-<!-- GitHub metrics 信息指标 -->
-<div align="center">
-<img width="120%" src="https://repobeats.axiom.co/api/embed/dd42bad8effa7ab44d2f3124414ee110611e044a.svg" />
-</div>
+
 </div>
 
 [//]: # ([利用Github Page 搭建个人博客网站]&#40;https://segmentfault.com/a/1190000007522957&#41;)
