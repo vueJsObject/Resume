@@ -19,28 +19,6 @@
 
   <!-- profile logo 个人资料徽标 -->
 
-[//]: # (  <div>)
-
-[//]: # (    <a href="https://blog.sunguoqi.com/"><img src="https://img.shields.io/badge/Website-博客-blue" /></a>&emsp;)
-
-[//]: # (    <a href="https://twitter.com/yanbo0039/"><img src="https://img.shields.io/badge/Twitter-推特-blue" /></a>&emsp;)
-
-[//]: # (    <a href="https://www.youtube.com/@yanbo0039"><img src="https://img.shields.io/badge/YouTube-油管-c32136" /></a>&emsp;)
-
-[//]: # (    <a href="https://mp.sunguoqi.com"><img src="https://img.shields.io/badge/WeChat-微信-07c160" /></a>&emsp;)
-
-[//]: # (    <a href="https://space.bilibili.com/448488855/"><img src="https://img.shields.io/badge/Bilibili-B站-ff69b4" /></a>&emsp;)
-
-[//]: # (    <a href="https://blog.csdn.net/weixin_50915462/"><img src="https://img.shields.io/badge/CSDN-论坛-c32136" /></a>&emsp;)
-
-[//]: # (    <a href="https://www.zhihu.com/people/sunguoqi/"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" /></a>&emsp;)
-
-[//]: # (    <!-- visitor statistics logo 访问量统计徽标 -->)
-
-[//]: # (    <img src="https://komarev.com/ghpvc/?username=yanbo0039&label=Views&color=0e75b6&style=flat" alt="访问量统计" />)
-
-[//]: # (  </div>)
-
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
@@ -49,243 +27,6 @@
   </picture>
 
 </div>
-
-#  🙋 Hello
-
-<table>
-
-<tr><td>
-
-[//]: # (### 🤺 About Me)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/steven.png" />)
-
-[//]: # ()
-[//]: # (<p>&emsp;&emsp;嗨，你好，我是小孙同学。</p>)
-
-[//]: # (<p>&emsp;&emsp;热爱编程、摄影、读书、旅行。</p>)
-
-[//]: # (<p>&emsp;&emsp;热爱计算机科学和IT互联网事业，希望能成为一名优秀的开发者。</p>)
-
-[//]: # (<p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>)
-
-[//]: # (<p><strong>&emsp;&emsp;We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong></p>)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (### 🏢 Work Experience)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/tuhui.png" />)
-
-[//]: # ()
-[//]: # (- [广州图慧信息科技有限公司]&#40;https://www.tuhuimap.com/&#41; &emsp; 📌 2023-06-19 —— 2024-01-19)
-
-[//]: # ()
-[//]: # (    - 工作岗位：Web前端开发工程师)
-
-[//]: # (    - 工作内容：杂活)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/nio.png" />)
-
-[//]: # ()
-[//]: # (- [蔚来汽车科技（安徽）有限公司]&#40;https://www.nio.cn/&#41; &emsp; 📌 2023-02-20 —— 2023-05-12)
-
-[//]: # ()
-[//]: # (    - 工作岗位：Web前端开发实习生)
-
-[//]: # (    - 工作内容：参与一站式数据治理与研发平台 DataSight 的开发与维护工作)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (### 📃 Recent Blog)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/astronaut.png" />)
-
-[//]: # ()
-[//]: # (<!-- START_SECTION:blog -->)
-
-[//]: # (* <a href='https://blog.sunguoqi.com/posts/e9426d4f/' target='_blank'>珠海之旅｜去感受风，去聆听海，去触摸，去抵达</a> - 2024-01-03)
-
-[//]: # (* <a href='https://blog.sunguoqi.com/posts/9f4f8f84/' target='_blank'>关于个人独立博客，我的折腾和思考</a> - 2023-12-09)
-
-[//]: # (* <a href='https://blog.sunguoqi.com/posts/3eb6a074/' target='_blank'>Oh My Posh | Windows Terminal 美化指南</a> - 2023-07-15)
-
-[//]: # (* <a href='https://blog.sunguoqi.com/posts/e7213992/' target='_blank'>小孙同学 の 第二大脑正在施工中。。。</a> - 2023-03-26)
-
-[//]: # (* <a href='https://blog.sunguoqi.com/posts/abe837db/' target='_blank'>奔跑在自己的时区里，你好哇，我的 22 岁！</a> - 2023-02-25)
-
-[//]: # (<!-- END_SECTION:blog -->)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (### 🧠 Second Brain)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/technologist.png" />)
-
-[//]: # ()
-[//]: # (<!-- START_SECTION:brain -->)
-
-[//]: # (* <a href='https://brain.sunguoqi.com/web/frontend/tools/git/git.html' target='_blank'>Git</a> - 2023-12-08)
-
-[//]: # (* <a href='https://brain.sunguoqi.com/web/frontend/tools/package-manage/npm.html' target='_blank'>npm</a> - 2023-09-07)
-
-[//]: # (* <a href='https://brain.sunguoqi.com/web/frontend/tools/package-manage/pnpm.html' target='_blank'>pnpm</a> - 2023-09-07)
-
-[//]: # (* <a href='https://brain.sunguoqi.com/web/frontend/tools/package-manage/yarn.html' target='_blank'>yarn</a> - 2023-09-07)
-
-[//]: # (* <a href='https://brain.sunguoqi.com/web/frontend/tools/vscode/vscode.html' target='_blank'>Vscode 权威指南</a> - 2023-12-08)
-
-[//]: # (<!-- END_SECTION:brain -->)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (### 🤾‍♂️ Funny Soul)
-
-[//]: # ()
-[//]: # (<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/artist.png" />)
-
-[//]: # ()
-[//]: # (<!-- START_SECTION:douban -->)
-
-[//]: # (* <a href='https://book.douban.com/subject/35193035/' target='_blank'>读过认知觉醒</a> 🌟🌟🌟🌟🌟 力荐- 2023-11-10)
-
-[//]: # (* <a href='https://book.douban.com/subject/27040433/' target='_blank'>最近在读极简主义</a> 🌟🌟🌟🌟🌟 力荐- 2023-11-10)
-
-[//]: # (* <a href='http://movie.douban.com/subject/1292052/' target='_blank'>看过肖申克的救赎</a> 🌟🌟🌟🌟🌟 力荐- 2023-02-07)
-
-[//]: # (* <a href='http://movie.douban.com/subject/1292365/' target='_blank'>看过活着</a> 🌟🌟🌟🌟🌟 力荐- 2023-02-07)
-
-[//]: # (* <a href='https://music.douban.com/subject/26567580/' target='_blank'>听过假如爱有天意</a> 🌟🌟🌟🌟🌟 力荐- 2023-02-07)
-
-[//]: # (<!-- END_SECTION:douban -->)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (### 📊 WakaTime)
-
-[//]: # ()
-[//]: # (<picture>)
-
-[//]: # (  <source)
-
-[//]: # (    srcset="https://github-readme-stats.vercel.app/api/wakatime?username=yanbo0039&layout=compact&text_color=f0f6fc&bg_color=00000000&hide_border=true&hide_title=true")
-
-[//]: # (    media="&#40;prefers-color-scheme: dark&#41;")
-
-[//]: # (  />)
-
-[//]: # (  <source)
-
-[//]: # (    srcset="https://github-readme-stats.vercel.app/api/wakatime?username=yanbo0039&layout=compact&text_color=1f2328&bg_color=00000000&hide_border=true&hide_title=true")
-
-[//]: # (    media="&#40;prefers-color-scheme: light&#41;")
-
-[//]: # (  />)
-
-[//]: # (  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=yanbo0039&layout=compact&text_color=f0f6fc&bg_color=00000000&hide_border=true&hide_title=true" />)
-
-[//]: # (</picture>)
-
-</td></tr>
-
-<tr><td>
-
-[//]: # (<!--START_SECTION:waka-->)
-
-[//]: # (**I'm an Early 🐤**)
-
-[//]: # ()
-[//]: # (```text)
-
-[//]: # (🌞 Morning                478 commits         ██████░░░░░░░░░░░░░░░░░░░   23.45 % )
-
-[//]: # (🌆 Daytime                657 commits         ████████░░░░░░░░░░░░░░░░░   32.24 % )
-
-[//]: # (🌃 Evening                598 commits         ███████░░░░░░░░░░░░░░░░░░   29.34 % )
-
-[//]: # (🌙 Night                  305 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.97 % )
-
-[//]: # (```)
-
-[//]: # (📅 **I'm Most Productive on Friday**)
-
-[//]: # ()
-[//]: # (```text)
-
-[//]: # (Monday                   286 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.03 % )
-
-[//]: # (Tuesday                  184 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.03 % )
-
-[//]: # (Wednesday                261 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.81 % )
-
-[//]: # (Thursday                 234 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.48 % )
-
-[//]: # (Friday                   579 commits         ███████░░░░░░░░░░░░░░░░░░   28.41 % )
-
-[//]: # (Saturday                 188 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.22 % )
-
-[//]: # (Sunday                   306 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.01 % )
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # ()
-[//]: # (📊 **This Week I Spent My Time On**)
-
-[//]: # ()
-[//]: # (```text)
-
-[//]: # (🕑︎ Time Zone: Asia/Shanghai)
-
-[//]: # ()
-[//]: # (💬 Programming Languages: )
-
-[//]: # (Vue.js                   15 hrs 21 mins      ████████████████░░░░░░░░░   63.25 % )
-
-[//]: # (Markdown                 4 hrs 54 mins       █████░░░░░░░░░░░░░░░░░░░░   20.22 % )
-
-[//]: # (JSON                     2 hrs               ██░░░░░░░░░░░░░░░░░░░░░░░   08.28 % )
-
-[//]: # (YAML                     35 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.44 % )
-
-[//]: # (JavaScript               34 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.40 % )
-
-[//]: # ()
-[//]: # (🔥 Editors: )
-
-[//]: # (VS Code                  24 hrs 16 mins      █████████████████████████   100.00 % )
-
-[//]: # ()
-[//]: # (💻 Operating System: )
-
-[//]: # (Mac                      24 hrs 16 mins      █████████████████████████   100.00 % )
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # ()
-[//]: # (Last Updated on 23/01/2024 01:22:03 UTC)
-
-[//]: # (<!--END_SECTION:waka-->)
-
-</td></tr>
-
-</table>
 
 
 <!-- ########################################## 分割 ########################################## -->
@@ -298,35 +39,17 @@
 
 <!-- Joke 笑话 -->
 
-[//]: # (<div>)
-
-[//]: # (  <picture>)
-
-[//]: # (    <source media="&#40;prefers-color-scheme: dark&#41;" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />)
-
-[//]: # (    <source media="&#40;prefers-color-scheme: light&#41;" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%ffffff" />)
-
-[//]: # (    <img alt="Jokes Card" src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />)
-
-[//]: # (  </picture>)
-
-[//]: # (</div>)
-
 <!-- github-readme-streak-stats 连续提交代码天数记录 -->
 
-[//]: # (<img align="left" width="150" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/left.png" />)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=dark&hide_border=true" />
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=light&hide_border=true" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=yanbo0039&theme=default&hide_border=true" />
 </picture>
 
-[//]: # (<img align="right" width="150"  src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/right.png" />)
 
 <!-- metrics 基础资料 -->
 
-[//]: # (<img width="150" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/cxyduck.gif" />&emsp;)
-[//]: # (<img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/base.svg" />)
 &emsp;<img width="150" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/cxyduck.gif" />
 
 <!-- GitHub Activity Graph GitHub 活动图 -->
@@ -353,7 +76,6 @@
 
 <!-- Quotes 名人名言 -->
 
-[//]: # (<div><img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" /><br/></div>)
 
 <!-- GitHub 奖杯🏆 -->
 <div><img src="https://github-profile-trophy.vercel.app/?username=yanbo0039&theme=gruvbox&row=1&column=7&no-frame=true&no-bg=true" /><br/></div>
@@ -465,43 +187,7 @@
 
 <!-- first form 第一个表格 -->
 
-[//]: # (<table>)
-
-[//]: # (  <tr>)
-
-[//]: # (    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/people.followers.svg" alt="people.followers" /></td>)
-
-[//]: # (  </tr>)
-
-[//]: # (</table>)
-
 <!-- second form 第二个表格 -->
-<table>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/reactions.svg" alt="reactions" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/followup.indepth.svg" alt="followup.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/repositories.pinned.svg" alt="repositories.pinned" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/wakatime.svg" alt="wakatime" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/habits.charts.svg" alt="habits.charts" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/calendar.full.svg" alt="calendar.full" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/activity.svg" alt="activity" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/stackoverflow.svg" alt="stackoverflow" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/stars.svg" alt="stars" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/github-metrics/stargazers.chartist.svg" alt="stargazers.chartist" /></td>
-  </tr>
-</table>
 
 <img width="120%" src="https://repobeats.axiom.co/api/embed/dd42bad8effa7ab44d2f3124414ee110611e044a.svg" />
 
