@@ -11,11 +11,12 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
+    <img src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" height="99px" width="98%"/>
   </picture>
 
   <!-- for beauty 留个空行好看点 -->
-  <div>&nbsp;</div>
+
+[//]: # (  <div>&nbsp;</div>)
 
   <!-- profile logo 个人资料徽标 -->
 
@@ -23,7 +24,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/profile-snake-contrib/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
+    <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/profile-snake-contrib/github-contribution-grid-snake-dark.svg" width="100%"/>
   </picture>
 
 </div>
@@ -65,7 +66,6 @@
 <img height="137px" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=yanbo0039&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite" />
 
 </div>
-
 <!-- ########################################## 分割 ########################################## -->
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
 
