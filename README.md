@@ -6,11 +6,16 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
   </picture>
-  <!-- dynamic typing effect 动态打字效果 -->
+
   <div>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
+    <!-- dynamic typing effect 动态打字效果 -->
+    <img style="margin-bottom: -35px;" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
+
+<!-- visitor statistics logo 访问量统计徽标 -->
+<img src="https://komarev.com/ghpvc/?username=yanbo0039&label=Views&color=0e75b6&style=flat" alt="访问量统计" />
+
   </div>
 
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
