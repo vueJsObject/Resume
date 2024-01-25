@@ -4,9 +4,9 @@
 
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding1.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
+    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding1.gif"/>
   </picture>
 
   <div>
