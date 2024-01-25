@@ -8,8 +8,8 @@
   </picture>
 
   <!-- dynamic typing effect 动态打字效果 -->
-  <picture>
-    <img class="sys-img" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
+  <picture class="sys-img">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
   </picture>
 
 
@@ -73,7 +73,7 @@
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
 
 <style>
-.sys-img {
+.sys-img>img{
     margin-bottom: -35px;
 }
 </style>
