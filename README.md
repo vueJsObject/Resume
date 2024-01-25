@@ -6,7 +6,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
+    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
   </picture>
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
