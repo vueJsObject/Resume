@@ -1,15 +1,15 @@
 <div align="center">
 
-  <!-- dynamic typing effect 动态打字效果 -->
-
-  <picture>
-    <img style="margin-bottom: -15px;" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
-  </picture>
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img style="width: 98%;" height="90px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif"/>
+    <img width="98%" height="115px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif"/>
+  </picture>
+
+  <!-- dynamic typing effect 动态打字效果 -->
+  <picture>
+    <img class="sys-img" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);&center=true&size=17" />
   </picture>
 
 
@@ -71,6 +71,13 @@
 
 
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
+
+<style>
+.sys-img {
+    margin-bottom: -35px;
+}
+</style>
+
 </div>
 
 [//]: # ([利用Github Page 搭建个人博客网站]&#40;https://segmentfault.com/a/1190000007522957&#41;)
