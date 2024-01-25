@@ -9,7 +9,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/developer.svg" height="225px" />
-    <img style="width: 98%;height: 95px;" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif"/>
+    <img style="width: 98%;" height="90px" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding.gif"/>
   </picture>
 
 
