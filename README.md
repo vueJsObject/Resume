@@ -45,5 +45,5 @@
 
 <div align="center" >
 <!-- programming tool icon 编程工具图标 -->
-<img src="https://skillicons.dev/icons?i=html,css,javascript,jquery,d3,bootstrap,vue,react,typescript,vite,mongodb,nodejs,mysql,redis,java,spring,elasticsearch,python,php,linux,git,eclipse,idea,vscode,github,ps,ai,pr,mongodb,gmail" /><br>
+<img src="https://skillicons.dev/icons?i=html,css,javascript,jquery,d3,bootstrap,vue,react,typescript,vite,mongodb,nodejs,mysql,redis,java,spring,maven,elasticsearch,python,php,linux,git,eclipse,idea,vscode,github,ps,ai,pr,gmail" /><br>
 </div>
