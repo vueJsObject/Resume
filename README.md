@@ -1,7 +1,4 @@
 <div align="center">
-
-
-
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/coding1.gif" />
@@ -12,8 +9,6 @@
 <!-- ########################################## 分割 ########################################## -->
 
 <img width="200%" src="https://cdn.jsdelivr.net/gh/yanbo0039/yanbo0039/assets/images/hr.gif" />
-
-
   <div>
     <!-- dynamic typing effect 动态打字效果 -->
     <img style="margin-bottom: -35px;" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=System.out.println(%22Hello%2C%20World%22);Welcome to my GitHub repository!&center=true&size=17" />
