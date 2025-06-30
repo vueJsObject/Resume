@@ -1,0 +1,48 @@
+/* 标题样式 */
+.title {
+    font-size: 2.5em;
+    color: #008B8B;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 4px double rgba(247, 197, 106, 0.35);
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+}
+
+.title+div {
+    margin: 15px auto 55px auto
+}
+
+/* 动画 */
+.fade-in {
+    opacity: 0.5;
+    transform: translateY(10px);
+    animation: fadeIn 0.8s ease forwards;
+    animation-play-state: running;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-play-state: paused;
+    will-change: transform, opacity;
+} */
