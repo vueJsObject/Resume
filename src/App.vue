@@ -35,7 +35,7 @@ import Footer from './components/Footer.vue'
 
 /* 页面切换动画 */
 .page {
-        padding-top: 10px;
+    padding-top: 10px;
     animation: fadeIn 0.3s ease-in;
 }
 
@@ -43,6 +43,7 @@ import Footer from './components/Footer.vue'
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

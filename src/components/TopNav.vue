@@ -8,7 +8,7 @@
                 <div class="collapse navbar-collapse" :class="{ show: !isCollapsed }">
                     <ul class="navbar-nav">
                         <li class="nav-item" v-for="item in navItems" :key="item.id">
-                            <router-link :to="{ name: item.id }" class="nav-link" @click="closeNav"
+                            <router-link :to="{ name: item.id }" class="nav-link" @click="handleNavClick"
                                 :class="{ active: isActive(item.id) }">
                                 {{ item.content }}
                             </router-link>
@@ -39,6 +39,12 @@ const isCollapsed = ref(true)
 const isScrolled = ref(false)
 
 /**
+ * 保存每个页面的滚动位置
+ * @type {import('vue').Ref<Object>}
+ */
+const savedScrollPositions = ref({})
+
+/**
  * 判断当前路由是否激活
  */
 const isActive = (routeName) => {
@@ -50,6 +56,98 @@ const isActive = (routeName) => {
  */
 const toggleNav = () => {
     isCollapsed.value = !isCollapsed.value
+}
+
+/**
+ * 保存当前页面的滚动位置
+ */
+const saveCurrentScrollPosition = () => {
+    const mainContentElement = document.querySelector('.main-content')
+    if (mainContentElement) {
+        const currentRoute = route.name
+        savedScrollPositions.value[currentRoute] = mainContentElement.scrollTop
+        console.log('保存页面滚动位置:', currentRoute, '位置:', mainContentElement.scrollTop)
+    }
+}
+
+/**
+ * 恢复页面的滚动位置
+ */
+const restoreScrollPosition = () => {
+    const mainContentElement = document.querySelector('.main-content')
+    if (mainContentElement) {
+        const currentRoute = route.name
+        const savedPosition = savedScrollPositions.value[currentRoute] || 0
+
+        console.log('恢复页面滚动位置:', currentRoute, '位置:', savedPosition)
+
+        if (savedPosition > 0) {
+            mainContentElement.scrollTo({
+                top: savedPosition,
+                behavior: 'smooth'
+            })
+        }
+    }
+}
+
+/**
+ * 处理导航点击事件
+ */
+const handleNavClick = () => {
+    console.log('=== 导航点击调试信息 ===')
+
+    // 保存当前页面的滚动位置
+    saveCurrentScrollPosition()
+
+    // 关闭导航菜单
+    isCollapsed.value = true
+
+    // 延迟执行，确保路由切换完成后再获取位置
+    setTimeout(() => {
+        // 获取导航栏元素
+        const navElement = document.querySelector('.top-nav')
+        const mainContentElement = document.querySelector('.main-content')
+
+        if (navElement && mainContentElement) {
+            const navTop = navElement.offsetTop
+            const navHeight = navElement.offsetHeight
+            const mainContentTop = mainContentElement.offsetTop
+            const navRect = navElement.getBoundingClientRect()
+            const mainContentRect = mainContentElement.getBoundingClientRect()
+            const windowScrollY = window.scrollY
+
+            console.log('导航栏 offsetTop:', navTop)
+            console.log('导航栏高度:', navHeight)
+            console.log('主内容区域 offsetTop:', mainContentTop)
+            console.log('导航栏 getBoundingClientRect().top:', navRect.top)
+            console.log('当前页面滚动位置 window.scrollY:', windowScrollY)
+            console.log('导航栏距离页面顶部的实际距离:', navTop + windowScrollY)
+            console.log('导航栏距离视口顶部的距离:', navRect.top)
+
+            console.log('主内容区域 getBoundingClientRect().top:', mainContentRect.top)
+            console.log('主内容区域距离页面顶部的实际距离:', mainContentTop + windowScrollY)
+            console.log('主内容区域距离视口顶部的距离:', mainContentRect.top)
+            console.log('主内容区域滚动位置:', mainContentElement.scrollTop)
+
+            // 计算正确的滚动目标位置
+            // 我们需要滚动到主内容区域的顶部，让它在导航栏下方显示
+            let scrollTarget = mainContentTop - navHeight
+
+            console.log('计算出的滚动目标位置:', scrollTarget)
+            console.log('这样主内容区域会显示在导航栏下方，距离视口顶部:', navHeight, 'px')
+
+            // 滚动到目标位置
+            window.scrollTo({
+                top: scrollTarget,
+                behavior: 'smooth'
+            })
+        }
+
+        // 延迟恢复新页面的滚动位置
+        setTimeout(() => {
+            restoreScrollPosition()
+        }, 200)
+    }, 100)
 }
 
 /**
@@ -107,6 +205,11 @@ const navItems = ref([
 // 组件挂载时添加滚动监听
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
+
+    // 页面加载时恢复滚动位置
+    setTimeout(() => {
+        restoreScrollPosition()
+    }, 100)
 })
 
 // 组件卸载时移除滚动监听
@@ -118,7 +221,7 @@ onUnmounted(() => {
 <style scoped>
 .top-nav {
     background: #fff;
-        border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -129,24 +232,26 @@ onUnmounted(() => {
 .nav-shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar {
     padding: 0;
 }
 
 .navbar-nav {
     margin: 0 auto;
-      display: flex;
+    display: flex;
     gap: 2rem;
 }
 
 .nav-link {
     color: #333;
-      text-decoration: none;
+    text-decoration: none;
     font-weight: 500;
     padding: 10px 20px;
     position: relative;
     transition: color 0.3s ease;
 }
+
 .nav-link:hover,
 .nav-link.active {
     color: #007bff;

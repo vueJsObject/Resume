@@ -65,21 +65,33 @@ const routes = [
     }
 ]
 
+// 创建 Vue Router 实例
 const router = createRouter({
+    // 使用 HTML5 History 模式
     history: createWebHistory(),
+    // 路由配置数组
     routes,
+    // 控制路由切换时页面的滚动行为
     scrollBehavior(to, from, savedPosition) {
+        // 如果有保存的滚动位置（如浏览器前进/后退），则返回该位置
         if (savedPosition) {
             return savedPosition
         }
-        const navElement = document.querySelector('.top-nav')
+
+        // 查找页面上的 .top-nav 元素
+        const navElement = document.querySelector('.top-nav');
         if (navElement) {
-            const navTop = navElement.offsetTop
+            // 获取导航栏距离页面顶部的距离
+            const navTop = navElement.offsetTop;
+
+            // 滚动到导航栏位置，让导航栏显示在页面顶部
             return {
                 top: navTop,
                 behavior: 'smooth'
             }
         }
+
+        // 如果找不到导航栏，默认滚动到页面顶部
         return {
             top: 0,
             behavior: 'smooth'

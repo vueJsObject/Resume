@@ -22,7 +22,7 @@ const projects = ref([
         title: "响应式作品集",
         description: "使用HTML5和CSS3开发的响应式个人作品集网站，展示个人项目和技能。支持多设备适配，动画效果丰富。",
         img: "/images/css1.png",
-        technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+        technologies: ["CSS3", "HTML5", "JavaScript", "Bootstrap"],
         url: "https://gitee.com/css3project/flexIndex",
         demo: ""
     },
@@ -30,7 +30,7 @@ const projects = ref([
         title: "CSS动画",
         description: "利用CSS3新特性实现点击页面平滑的效果",
         img: "/images/css3.png",
-        technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+        technologies: ["CSS3", "HTML5", "JavaScript", "Bootstrap"],
         url: "https://gitee.com/css3project/cssPageSmoothing",
         demo: ""
     },
@@ -103,7 +103,7 @@ const projects = ref([
         description: "利用Vue和Bootstrap实现的响应式的个人简历项目",
         img: "/images/Vue_Bootstrap_1.png",
         technologies: ["Vue", "Bootstrap"],
-        url: "",
+        url: "https://gitee.com/vueJsObject/Resume",
         demo: ""
     },
     {
