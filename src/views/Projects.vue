@@ -17,6 +17,14 @@
 import { ref } from 'vue'
 import Project from '@/components/Project.vue'
 
+/**
+ * title 标题
+ * description 描述
+ * img 图片
+ * technologies 标签
+ * url 项目地址
+ * demo 项目展示地址
+ */
 const projects = ref([
     {
         title: "响应式作品集",
